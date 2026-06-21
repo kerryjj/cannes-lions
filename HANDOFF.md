@@ -50,15 +50,19 @@ the two pullers + `node scripts/normalize.mjs`.
 `data/sessions.json` now holds **~326 real sessions** (3 hosts: Cannes Lions,
 Sport Beach, Inkwell Beach; cross-source duplicates de-duped by title+start).
 
+- **Canva Creative Cabana** — DONE via headless browser. `scripts/pull-canva.mjs`
+  uses Playwright (full Chromium clears Cloudflare's challenge), loads the agenda
+  iframe `public.canva.site/cannes/#page-1`, and reconstructs sessions from the
+  Canva design's absolutely-positioned text (no clean JSON exists). Yields 30
+  sessions Mon–Wed. **Thursday 25 June doesn't extract** — that day's text nodes
+  render with x=0 (no layout box), so left/right columns can't be separated.
+  This adapter is fragile: if Canva restyles, re-check the (x,y) thresholds.
+
 ### Still pending (commercial anti-bot — not solvable from this network)
-- **Canva detailed agenda** lives in an iframe at `public.canva.site/cannes`.
-  Cloudflare's challenge *is* passable with full headless Chromium (Playwright),
-  but the schedule is a Canva *design* (absolutely-positioned text fragments), so
-  there's no clean JSON to parse — would need positional reconstruction. The
-  official feed already has the umbrella Canva Cabana entry.
 - **AI & Tech Sandbox** (`aiandtechsandbox.com`) is behind **DataDome**, which
-  blocks even real headless Chromium from this datacenter IP (TLS-intercepting
+  blocks even real headless Chromium from this datacenter IP (the TLS-intercepting
   egress proxy changes the fingerprint). Needs a human browser grab.
+- **Canva Thursday** — see above; would need a different extraction (DOM order).
 
 ## NEXT STEPS (in the new environment)
 
