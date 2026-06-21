@@ -49,6 +49,41 @@
       "address": "Boulevard de la Croisette, 06400 Cannes",
       "lat": 43.5495,
       "lng": 7.0235
+    },
+    {
+      "id": "vega",
+      "name": "Canva Creative Cabana (Vega La Plage)",
+      "address": "13 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.551,
+      "lng": 7.0185
+    },
+    {
+      "id": "ondine",
+      "name": "Microsoft Gardens (Ondine / Vilebrequin La Plage)",
+      "address": "64 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5494,
+      "lng": 7.025
+    },
+    {
+      "id": "sportbeach",
+      "name": "Stagwell Sport Beach (La Plage du Festival)",
+      "address": "52 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5496,
+      "lng": 7.0242
+    },
+    {
+      "id": "fqbeach",
+      "name": "FQ Beach (Hôtel Martinez)",
+      "address": "73 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5486,
+      "lng": 7.028
+    },
+    {
+      "id": "influentialbeach",
+      "name": "Influential Beach (La Mandala Beach)",
+      "address": "Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5491,
+      "lng": 7.0262
     }
   ],
   "walkMatrix": {
@@ -59,7 +94,12 @@
       "carlton": 9,
       "martinez": 14,
       "spotifybeach": 12,
-      "croisette": 8
+      "croisette": 8,
+      "vega": 2,
+      "ondine": 10,
+      "sportbeach": 9,
+      "fqbeach": 14,
+      "influentialbeach": 12
     },
     "majestic": {
       "palais": 2,
@@ -68,7 +108,12 @@
       "carlton": 8,
       "martinez": 13,
       "spotifybeach": 11,
-      "croisette": 7
+      "croisette": 7,
+      "vega": 1,
+      "ondine": 9,
+      "sportbeach": 7,
+      "fqbeach": 13,
+      "influentialbeach": 10
     },
     "jwmarriott": {
       "palais": 7,
@@ -77,7 +122,12 @@
       "carlton": 2,
       "martinez": 7,
       "spotifybeach": 5,
-      "croisette": 1
+      "croisette": 1,
+      "vega": 6,
+      "ondine": 3,
+      "sportbeach": 2,
+      "fqbeach": 7,
+      "influentialbeach": 5
     },
     "carlton": {
       "palais": 9,
@@ -86,7 +136,12 @@
       "carlton": 0,
       "martinez": 5,
       "spotifybeach": 3,
-      "croisette": 1
+      "croisette": 1,
+      "vega": 8,
+      "ondine": 1,
+      "sportbeach": 1,
+      "fqbeach": 5,
+      "influentialbeach": 2
     },
     "martinez": {
       "palais": 14,
@@ -95,7 +150,12 @@
       "carlton": 5,
       "martinez": 0,
       "spotifybeach": 2,
-      "croisette": 6
+      "croisette": 6,
+      "vega": 13,
+      "ondine": 4,
+      "sportbeach": 5,
+      "fqbeach": 1,
+      "influentialbeach": 3
     },
     "spotifybeach": {
       "palais": 12,
@@ -104,7 +164,12 @@
       "carlton": 3,
       "martinez": 2,
       "spotifybeach": 0,
-      "croisette": 4
+      "croisette": 4,
+      "vega": 11,
+      "ondine": 2,
+      "sportbeach": 3,
+      "fqbeach": 2,
+      "influentialbeach": 1
     },
     "croisette": {
       "palais": 8,
@@ -113,7 +178,82 @@
       "carlton": 1,
       "martinez": 6,
       "spotifybeach": 4,
-      "croisette": 0
+      "croisette": 0,
+      "vega": 7,
+      "ondine": 2,
+      "sportbeach": 1,
+      "fqbeach": 6,
+      "influentialbeach": 4
+    },
+    "vega": {
+      "palais": 2,
+      "majestic": 1,
+      "jwmarriott": 6,
+      "carlton": 8,
+      "martinez": 13,
+      "spotifybeach": 11,
+      "croisette": 7,
+      "vega": 0,
+      "ondine": 9,
+      "sportbeach": 8,
+      "fqbeach": 13,
+      "influentialbeach": 11
+    },
+    "ondine": {
+      "palais": 10,
+      "majestic": 9,
+      "jwmarriott": 3,
+      "carlton": 1,
+      "martinez": 4,
+      "spotifybeach": 2,
+      "croisette": 2,
+      "vega": 9,
+      "ondine": 0,
+      "sportbeach": 1,
+      "fqbeach": 4,
+      "influentialbeach": 2
+    },
+    "sportbeach": {
+      "palais": 9,
+      "majestic": 7,
+      "jwmarriott": 2,
+      "carlton": 1,
+      "martinez": 5,
+      "spotifybeach": 3,
+      "croisette": 1,
+      "vega": 8,
+      "ondine": 1,
+      "sportbeach": 0,
+      "fqbeach": 5,
+      "influentialbeach": 3
+    },
+    "fqbeach": {
+      "palais": 14,
+      "majestic": 13,
+      "jwmarriott": 7,
+      "carlton": 5,
+      "martinez": 1,
+      "spotifybeach": 2,
+      "croisette": 6,
+      "vega": 13,
+      "ondine": 4,
+      "sportbeach": 5,
+      "fqbeach": 0,
+      "influentialbeach": 3
+    },
+    "influentialbeach": {
+      "palais": 12,
+      "majestic": 10,
+      "jwmarriott": 5,
+      "carlton": 2,
+      "martinez": 3,
+      "spotifybeach": 1,
+      "croisette": 4,
+      "vega": 11,
+      "ondine": 2,
+      "sportbeach": 3,
+      "fqbeach": 3,
+      "influentialbeach": 0
     }
   }
 }
