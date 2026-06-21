@@ -1,0 +1,372 @@
+SOURCE: https://aiandtechsandbox.com/agenda
+CAPTURED: 2026-06-21 (pasted manually — site is DataDome-protected, can't be fetched server-side)
+NOTE: The "Month DD, YYYY | h:mmAM - h:mmPM" header line under each title is the
+viewer's LOCAL/computer time (blue). The "🕑 ... (CEST)" line is the real Cannes
+time (black). We parse the 🕑 (CEST) line.
+
+22 June 2026
+-
+26 June 2026
+AI & Tech Sandbox at Cannes Lions 2026 | Powered by PMG
+Join us for a curated lineup of sessions at the AI & Tech Sandbox, which brings together leading voices across technology, media, and culture. Browse the full agenda below, reserve your spot in the sessions that matter most to you, or if full, join the waitlist.
+
+Filter
+All Sessions (25)
+My Agenda (2)
+Global Hackathon Brief Announcement
+June 22, 2026 | 9:00AM - 9:45AM
+Main Stage @ AI & Tech Sandbox
+Dillon  Larberg
+Dillon  Larberg,
+Consulting & Strategy Director, PMG
+AI & Tech Sandbox is hosting its first global hackathon. The online competition is open to creatives, developers, strategists, technologists, and builders from anywhere in the world. Teams will respond to an online brief and build a working solution for a real challenge at the intersection of advertising, creativity, technology, and automation. Winning teams will be eligible to receive a prize of up to a $500,000 to fund their solution and a real path for their solution to be used by leading brands.
+
+🕑 10:00 AM - 10:45 AM (CEST)
+
+Main Stage
+Panel: How AI Comes to Life for Leading Brands
+June 22, 2026 | 10:00AM - 10:45AM
+The Main Stage @ AI & Tech Sandbox
+Brieane Olson Whitney  MagnusonValentina  CulattiMegan  MalliParks  BlackwellGina Igwe
+Brieane Olson ,
+CEO, Pacsun
+Whitney  Magnuson,
+Head of Brand & Media , Zoom
+Valentina  Culatti,
+Global Director of Creative Strategy & Sponsored Production, Snapchat
+Megan  Malli,
+CEO, AnswerLab
+Parks  Blackwell,
+Moderator, VP of Client Development & Marketing, PMG
+Gina Igwe,
+VP of Brand, Creative & Consumer Marketing, DoorDash
+This session explores how modern organizations are evolving from campaign engines into integrated, tech-enabled growth drivers that shape the full customer journey and build community impact. Drawing on the perspectives of brand leaders from across industries, the conversation will examine how AI and data are reshaping marketing strategy, organizational design, and the relationship between performance and purpose.
+
+🕑 11:00 AM - 11:45 AM (CEST)
+
+Main Stage
+Panel: The Creator Divide – How to Navigate a World of AI Slop
+June 22, 2026 | 11:00AM - 11:45AM
+The Main Stage @ AI & Tech Sandbox
+Tom ScottXyla  FoxlinJennifer  Quigley-JonesAimee Smale
+Tom Scott,
+Creator
+Xyla  Foxlin,
+Creator
+Jennifer  Quigley-Jones,
+Moderator, VP of Strategy & Partnerships, PMG
+Aimee Smale,
+Founder, Odd Muse
+AI is reshaping content creation, but not all creators agree on what that means. This session brings together opposing perspectives and will explore the growing divide in the creator economy and what it signals for the future of audience engagement, creativity, and trust.
+
+🕑 12:00 PM - 12:45 PM (CEST)
+
+Main Stage
+Keynote: How Advertisers Can Help Information Integrity in a Fast-Paced World of AI
+June 22, 2026 | 12:00PM - 12:45PM
+The Main Stage @ AI & Tech Sandbox
+Charlotte  ScaddanHarriet Kingaby
+Charlotte  Scaddan,
+Senior Advisor on Information Integrity, United Nations
+Harriet Kingaby,
+Co-Chair and Co-Founder, Conscious Advertising Network
+As AI becomes embedded in every layer of media buying and content creation, the advertising industry faces a defining question: how do we move fast without breaking the systems our marketing depends on? This session brings together CAN and UN to explore what advertisers can do right now to protect information integrity.
+
+🕑 1:00 PM - 1:45 PM (CEST)
+
+Main Stage
+Panel: When AI Becomes the Interface: Winning Brand Discovery in a New Era
+June 22, 2026 | 1:00PM - 1:45PM
+The Main Stage @ AI & Tech Sandbox
+Oliver ParkerPhillipa Leighton-JonesParks Blackwell
+Oliver Parker,
+VP of Global Generative AI GTM, Google Cloud
+Phillipa Leighton-Jones,
+SVP, Global Head of Studio & Creative, Dow Jones & The Wall Street Journal
+Parks Blackwell,
+Moderator, VP of Client Development & Marketing, PMG
+For years, brands have optimized for search engines, social feeds, and media environments built around links and clicks. That model is changing. AI is increasingly the interface through which people find information, make decisions, and encounter brands.
+
+🕑 2:00 PM - 2:45 PM (CEST)
+
+Main Stage
+Keynote: AI Eats the World
+June 22, 2026 | 2:00PM - 2:45PM
+The Main Stage @ AI & Tech Sandbox
+Benedict  Evans
+Benedict  Evans,
+Independent Analyst
+Every decade or so, a platform shift rewires how technology works, who wins, and what gets built next. AI is that shift, and unlike previous cycles, it's moving faster, cutting deeper, and touching more industries at once. Benedict Evans turns his lens on AI: what's actually happening beneath the hype, where we are in the adoption curve, and how this really changes everything.
+
+🕑 3:00 PM - 3:45 PM (CEST)
+
+Main Stage
+Snapchat Meet Up: Beyond the Feed: David Dobrik, Snapchat, and the Social Media Reset
+June 22, 2026 | 3:15PM - 4:00PM
+The Main Stage @ AI & Tech Sandbox
+Erin JoyceMandy GardinerDavid Dobrik
+Erin Joyce,
+Head of Creative Strategy, North America, Snap Inc.
+Mandy Gardiner,
+Senior Director, Brand Partnerships, Snap Inc.
+David Dobrik,
+Creator Entrepreneur
+For years, social marketing has been built around the feed. But the next era of brand growth is moving somewhere more personal — into Stories, chat, creator relationships, and places where attention feels less like consumption and more like communication. This conversation is about what senior marketers can learn from one of the top creators in a generation.
+
+🕑 4:15 PM - 5:00 PM (CEST)
+
+Meet Up
+Alli Meet Up: From Data Rich to Decision Ready: A Live Look at Alli
+June 22, 2026 | 4:15PM - 5:00PM
+The Main Stage @ AI & Tech Sandbox
+Crissi CupakDillon Larberg
+Crissi Cupak,
+Head of Product, PMG
+Dillon Larberg,
+Consulting & Strategy Director, PMG
+Marketers have never had access to more data. They've also never struggled more to connect it to outcomes that matter. This session is a live look inside Alli, PMG's proprietary technology platform, built to close that gap, demonstrating how Alli unifies data, surfaces actionable intelligence, and puts AI to work across the full marketing ecosystem.
+
+🕥 5:15 PM - 6:00 PM (CEST)
+
+Meet Up
+Keynote: Future of Marketing & Business Transformation in the Era of AI
+June 23, 2026 | 9:00AM - 9:45AM
+The Main Stage @ AI & Tech Sandbox
+Jay  Pattisall
+Jay  Pattisall,
+VP & Principal Analyst , Forrester
+Forrester's newest research on AI and marketing transformation makes its global debut at this session. Drawing on data from CMOs and C-suite leaders across industries, Jay Pattisall lays out what this moment actually demands, from the brands trying to operationalize AI as a growth driver, to the agencies that need to show up differently to help them get there.
+
+🕑 10:00 AM - 10:45 AM (CEST)
+
+Main Stage
+Fireside Chat: Sparking Creativity: How AI is Redefining the Rules of Imagination
+June 23, 2026 | 10:00AM - 10:45AM
+The Main Stage @ AI & Tech Sandbox
+Simon MorrisBrandon BaumJennifer Quigley-Jones
+Simon Morris,
+VP of International Marketing, Adobe
+Brandon Baum,
+Creator
+Jennifer Quigley-Jones,
+Moderator, VP of Strategy & Partnerships, PMG
+AI is transforming the creative process, but what does that really mean for the people and brands building at the cutting edge? This fireside brings together two perspectives from within the Adobe ecosystem to explore how artificial intelligence is used not to replace creativity but to ignite it.
+
+🕑 11:00 AM - 11:45 AM (CEST)
+
+Main Stage
+Fireside Chat: Questlove on Creativity In The Age of Algorithms
+June 23, 2026 | 11:00AM - 11:45AM
+Main Stage @ AI & Tech Sandbox
+QuestloveGeorge Popstefanov
+Questlove,
+Academy Award-winning Filmmaker, DJ, Podcast Host and Member of The Roots
+George Popstefanov,
+Founder & CEO, PMG
+Few voices are better positioned to explore what happens when technology reshapes how culture gets made. From sampling and remix culture to recommendation algorithms and generative AI, Questlove has spent decades at the center of how creativity evolves through technology. An honest, forward-looking dialogue about the future of human creativity and why cultural context still matters.
+
+🕑 12:00 PM - 12:45 PM (CEST)
+
+Main Stage
+Fireside Chat: Brief Less. Build More. Vibe Code Now.
+June 23, 2026 | 12:15PM - 12:45PM
+The Main Stage @ AI & Tech Sandbox
+Jennifer KattulaDavid "Shingy" Shing
+Jennifer Kattula,
+CMO , Microsoft Advertising
+David "Shingy" Shing,
+Digital Prophet
+The future of marketing belongs to builders. Microsoft Advertising CMO Jennifer Kattula's hands-on, demo-sharing, vibe-coding session is the place to start if you want a faster route from "interesting idea" to "We made this!" — by learning to build customer-facing experiences, internal tools, and maybe even a better brief. No deep tech skills required. Jennifer will be joined by Digital Prophet David "Shingy" Shing.
+
+🕥 1:15 - 1:45 PM (CEST)
+
+Main Stage
+Fireside Chat: Real Results, Real Talk: How AI Is Reshaping Advertising From the Platform Up
+June 23, 2026 | 1:00PM - 1:45PM
+Main Stage @ AI & Tech Sandbox
+Matt SteinerParks Blackwell
+Matt Steiner,
+VP, Ads Infrastructure & Ranking AI, Meta
+Parks Blackwell,
+Moderator, VP of Client Development & Marketing, PMG
+The shift to AI-driven advertising hasn't been clean or linear—for platforms or for the marketing and technology companies building on top of them. This session takes an honest look at what's actually changed inside Meta's systems, and what the move toward agentic AI is forcing everyone to rethink. Less roadmap, more real talk.
+
+🕑 2:00 PM - 2:45 PM (CEST)
+
+Main Stage
+Convey Meet Up: Beyond Adoption – What a Million Hours of AI Reveals
+June 23, 2026 | 2:15PM - 3:00PM
+Main Stage @ AI & Tech Sandbox
+Akosua  AsamoahRohan Chopra
+Akosua  Asamoah,
+Partner, Andreessen Horowitz
+Rohan Chopra,
+Co-Founder & CEO, Convey
+Everyone has "adopted AI." Almost no one can prove it's doing the work. a16z's Akosua Asamoah sits down with Convey co-founder and CEO Rohan Chopra to dig into what a million hours of AI in the real world actually looks like - why most teams are stuck in the assistant phase, why adoption doesn't equal impact, and where real ROI actually comes from.
+
+🕑 3:15 PM - 4:00 PM (CEST)
+
+Meet Up
+Robot.com Meet Up: Is Brand Storytelling the Last Real Moat?
+June 23, 2026 | 3:15PM - 4:00PM
+The Main Stage @ AI & Tech Sandbox
+Judah  Longgrear
+Judah  Longgrear,
+Co-Founder, Robot.com, President, Rads
+Differentiating on product is getting harder. The same AI tools are available to everyone, and the technical edges brands once defended are dissolving fast. What's emerging in their place is taste: the story a brand tells, the point of view it holds, and the experiences it creates. This salon brings together CMOs, brand founders, and creative leaders to sit with the harder questions.
+
+🕑 4:15-5:00 PM (CEST)
+
+Meet Up
+Fireside Chat: The State of Community: Trust, Identity, & Influence in the AI Era
+June 24, 2026 | 9:00AM - 9:45AM
+The Main Stage @ AI & Tech Sandbox
+Steve HuffmanNicholas Ward
+Steve Huffman,
+Co-Founder, Reddit
+Nicholas Ward,
+Co-Founder & President, Koddi
+As trust in digital platforms continues to shift, communities are emerging as a critical source of credibility. Built on participation, moderation, and shared standards, these environments foster trust over time rather than assigning it through algorithms. This session explores how community-driven spaces are redefining trust.
+
+🕑 10:00 AM - 10:45 AM (CEST)
+
+Main Stage
+Panel: AI Fact vs. Fiction: A Marketer's Guide to What's Real, What's Hype, & What Actually Drives Value
+June 24, 2026 | 10:00AM - 10:45AM
+The Main Stage @ AI & Tech Sandbox
+Laura HeldLucy DobrinJosh Krichefski
+Laura Held,
+Partner, Executive Committee, Shamrock Capital
+Lucy Dobrin,
+Managing Director, Providence Equity Partners
+Josh Krichefski,
+Moderator, EMEA President, PMG
+AI will dominate the conversation at Cannes, but the reality behind the hype is far less clear. This session brings an investor's perspective to help marketers cut through the noise, exploring where AI is delivering real commercial impact across media, marketing, and creative, and where expectations are outpacing capabilities.
+
+🕑 11:00 AM - 11:45 AM (CEST)
+
+Main Stage
+Fireside Chat: Lights, Camera, Algorithm: AI's New Role in Hollywood
+June 24, 2026 | 11:00AM - 11:45AM
+The Main Stage @ AI & Tech Sandbox
+Buzz HaysJosh Krichefski
+Buzz Hays,
+Global Market Lead TMEG Industries, Google
+Josh Krichefski,
+EMEA President, PMG
+Hollywood has always been an industry built on technological reinvention—from the introduction of sound to CGI to streaming. AI is the next chapter. Buzz brings over 25 years at the intersection of entertainment and technology. This fireside explores what AI means for the future of entertainment: how it's changing visual effects, what it enables for immersive storytelling, and what it demands of the people and organizations trying to keep up.
+
+🕑 12:00 PM - 12:45 PM (CEST)
+
+Main Stage
+Panel: Brand Building for Humans – and AI
+June 24, 2026 | 12:00PM - 12:45PM
+The Main Stage @ AI & Tech Sandbox
+Jonah  GoodhartMark HowardCatherine BergerAngela Jones
+Jonah  Goodhart,
+CEO, Mobian
+Mark Howard,
+COO, Time
+Catherine Berger,
+Vice President, Marketing Transformation and Services, Grupo Bimbo / Bimbo Bakeries USA
+Angela Jones,
+Director, Marketing Intelligence & Technology , Amazon Ads
+AI is transforming how brands are discovered, interpreted, and recommended, introducing a new reality where companies must build for both human audiences and AI systems. The panel will explore how brands can adapt their strategies to influence not only perception but also the way AI surfaces and summarizes it.
+
+🕑 1:00 PM - 1:45 PM (CEST)
+
+Main Stage
+Keynote: Intelligence in Pixels: Executing Creative at the Speed and Scale of AI
+June 24, 2026 | 1:00PM - 1:45PM
+The Main Stage @ AI & Tech Sandbox
+Amit JainJonah Goodhart
+Amit Jain,
+CEO, Luma
+Jonah Goodhart,
+CEO, Mobian
+AI is reshaping every layer of how creative work gets made, and the pace is only accelerating. Amit Jain, CEO of Luma, will share where the technology stands today, where it's headed next, and what it means for the brands, agencies, and creative leaders working to keep pace. He'll then be joined for a fireside chat exploring what to expect over the next twelve months.
+
+🕑 2:00 PM - 2:45 PM (CEST)
+
+Main Stage
+Luma Meet Up: The Creative Renaissance: How AI is Enabling Independent Creative Agencies
+June 24, 2026 | 2:15PM - 3:00PM
+The Main Stage @ AI & Tech Sandbox
+Jason Day
+Jason Day,
+VP EMEA, Luma
+This panel brings together CEOs and CCOs from the world's leading independent agencies who have embraced AI to scale their creativity for the world's leading brands in a landscape typically controlled by Holding Companies. The discussion will cover how these agencies leverage AI and what it has enabled them to do this year that was not possible this time last year.
+
+🕑 03:15PM - 04:00PM (CEST)
+
+Meet Up
+PMG Meet Up: Creator Spark
+June 24, 2026 | 3:15PM - 4:00PM
+The Main Stage @ AI & Tech Sandbox
+Jennifer Quigley-JonesJoel MarlinarsonAmanda McCantsCaitlyn Kumi
+Jennifer Quigley-Jones,
+Vice President of Strategy & Partnerships, PMG
+Joel Marlinarson,
+Creator
+Amanda McCants,
+Creator
+Caitlyn Kumi,
+Creator
+Creator Spark is an intimate matchmaking workshop connecting top creators and innovative brands. Through curated meetings, Q&As, and creative ideation, attendees build real partnerships designed to spark standout future collaborations. Spaces are limited to senior brand marketers and creators only.
+
+🕑 04:15PM - 05:00PM (CEST)
+
+Meet Up
+Pinterest & PMG Meet Up: The Creative R&D Loop—A New Model for Co-Creating Marketing Innovation
+June 24, 2026 | 4:15PM - 5:00PM
+The Main Stage @ AI & Tech Sandbox
+Carly   CarsonCrissi  CupakChip JessoppJamie Kerns
+Carly   Carson,
+Head of Integrated Media (Moderator), PMG
+Crissi  Cupak,
+Head of Product, PMG
+Chip Jessopp,
+VP, GM Programmatic Ads Sales, Pinterest
+Jamie Kerns,
+VP, Engineering, Pinterest
+Pinterest and PMG will discuss a new model for innovation partnerships between platforms, agencies, and technology teams. Using a recent joint innovation sprint as an example, they will share how partner collaboration can unlock new approaches to audience understanding, creative development, and campaign planning.
+
+🕑 5:15 PM - 6:00 PM (CEST)
+
+Meet Up
+Panel: The New Creator Playbook: Influence, AI, & the Future of Brand-Creator Relationships
+June 25, 2026 | 11:00AM - 11:45AM
+The Main Stage @ AI & Tech Sandbox
+Jennifer  Quigley-JonesZachery  DereniowskiLauri  MetroseLeah Walker
+Jennifer  Quigley-Jones,
+Moderator, VP of Strategy & Partnerships, PMG
+Zachery  Dereniowski,
+Creator
+Lauri  Metrose,
+Chief Communications Officer, Expedia
+Leah Walker,
+Director of Influencer & Creator Marketing, Adobe
+The creator economy is evolving fast. With demand for unprecedented scale, effective measurement, and AI accelerating everything, this panel will explore how bold cultural brands and creators are innovating at the intersection of influencer marketing and emerging technology, from AI-powered solutions and performance measurement to the future of the brand-creator relationship.
+
+🕑 12:00 PM - 12:45 PM (CEST)
+
+Main Stage
+Panel: How to Survive in a Post-LiveRamp World
+June 25, 2026 | 12:00PM - 12:45PM
+The Main Stage @ AI & Tech Sandbox
+Tom  Triscari Mathieu  RocheSam BloomMatt  SpeigelDaniel Jaye
+Tom  Triscari ,
+Founder, Lemonade
+Mathieu  Roche,
+CEO and Co-Founder, ID5
+Sam Bloom,
+Head of Partnerships, PMG
+Matt  Speigel,
+EVP, TruAudience Growth Strategy, TransUnion
+Daniel Jaye,
+Chief Technology Officer and Co-Founder, Aqfer
+For 25 years, digital advertising has been built on a simple premise: identify the human, reach the human. But that foundation is shifting. As AI agents increasingly act on behalf of people—browsing, comparing, purchasing, and consuming content—the "user" marketers have always targeted may no longer be human at all. This session explores what that means for identity infrastructure, audience targeting, and the future of advertising in an agentic internet.
+
+🕑 1:00 PM - 1:45 PM (CEST)
+
+Main Stage
