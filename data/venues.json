@@ -1,0 +1,119 @@
+{
+  "_comment": "Cannes venues with approximate coordinates. Walk times are computed by scripts/travel.mjs into walkMatrix below. lat/lng are best-effort and can be refined.",
+  "venues": [
+    {
+      "id": "palais",
+      "name": "Palais des Festivals et des Congrès",
+      "address": "1 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5506,
+      "lng": 7.0174
+    },
+    {
+      "id": "majestic",
+      "name": "Hôtel Barrière Le Majestic",
+      "address": "10 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5512,
+      "lng": 7.019
+    },
+    {
+      "id": "jwmarriott",
+      "name": "JW Marriott Cannes",
+      "address": "50 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.55,
+      "lng": 7.0228
+    },
+    {
+      "id": "carlton",
+      "name": "Carlton Cannes",
+      "address": "58 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5497,
+      "lng": 7.0245
+    },
+    {
+      "id": "martinez",
+      "name": "Hôtel Martinez",
+      "address": "73 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5486,
+      "lng": 7.028
+    },
+    {
+      "id": "spotifybeach",
+      "name": "Spotify Beach",
+      "address": "Plage, Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5489,
+      "lng": 7.0265
+    },
+    {
+      "id": "croisette",
+      "name": "Croisette (beach clubs)",
+      "address": "Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5495,
+      "lng": 7.0235
+    }
+  ],
+  "walkMatrix": {
+    "palais": {
+      "palais": 0,
+      "majestic": 2,
+      "jwmarriott": 7,
+      "carlton": 9,
+      "martinez": 14,
+      "spotifybeach": 12,
+      "croisette": 8
+    },
+    "majestic": {
+      "palais": 2,
+      "majestic": 0,
+      "jwmarriott": 5,
+      "carlton": 8,
+      "martinez": 13,
+      "spotifybeach": 11,
+      "croisette": 7
+    },
+    "jwmarriott": {
+      "palais": 7,
+      "majestic": 5,
+      "jwmarriott": 0,
+      "carlton": 2,
+      "martinez": 7,
+      "spotifybeach": 5,
+      "croisette": 1
+    },
+    "carlton": {
+      "palais": 9,
+      "majestic": 8,
+      "jwmarriott": 2,
+      "carlton": 0,
+      "martinez": 5,
+      "spotifybeach": 3,
+      "croisette": 1
+    },
+    "martinez": {
+      "palais": 14,
+      "majestic": 13,
+      "jwmarriott": 7,
+      "carlton": 5,
+      "martinez": 0,
+      "spotifybeach": 2,
+      "croisette": 6
+    },
+    "spotifybeach": {
+      "palais": 12,
+      "majestic": 11,
+      "jwmarriott": 5,
+      "carlton": 3,
+      "martinez": 2,
+      "spotifybeach": 0,
+      "croisette": 4
+    },
+    "croisette": {
+      "palais": 8,
+      "majestic": 7,
+      "jwmarriott": 1,
+      "carlton": 1,
+      "martinez": 6,
+      "spotifybeach": 4,
+      "croisette": 0
+    }
+  }
+}

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cannes Lions 2026 — What's On</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --panel2: #1e222b; --line: #2a2f3a;
+    --text: #e7e9ee; --muted: #9aa3b2; --accent: #ffcf3f; --accent2: #4f8cff;
+    --good: #34c759; --warn: #ff9f0a; --bad: #ff453a;
+    --going: #1f3a2a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  header { position: sticky; top: 0; z-index: 10; background: rgba(15,17,21,.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); padding: 12px 16px; }
+  h1 { margin: 0 0 8px; font-size: 18px; letter-spacing: .3px; }
+  h1 span { color: var(--accent); }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .days { display: flex; gap: 6px; flex-wrap: wrap; }
+  button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel2); color: var(--text); padding: 6px 12px; border-radius: 999px; }
+  button:hover { border-color: var(--muted); }
+  button.active { background: var(--accent); color: #1a1300; border-color: var(--accent); font-weight: 600; }
+  .chip { padding: 4px 10px; font-size: 13px; }
+  .chip.off { opacity: .4; }
+  .spacer { flex: 1; }
+  .primary { background: var(--accent2); border-color: var(--accent2); color: #fff; font-weight: 600; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  .hosts { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 14px; }
+  .slot { margin: 0 0 6px; }
+  .slot-time { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin: 18px 0 6px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--host, var(--muted)); border-radius: 10px; padding: 10px 12px; position: relative; cursor: pointer; transition: border-color .12s; }
+  .card:hover { border-color: var(--muted); }
+  .card.going { background: var(--going); border-color: var(--good); }
+  .card .title { font-weight: 600; margin: 0 0 4px; padding-right: 26px; }
+  .card .meta { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; }
+  .card .host-tag { color: var(--host, var(--muted)); font-weight: 600; }
+  .card .check { position: absolute; top: 10px; right: 12px; font-size: 16px; }
+  .card .desc { font-size: 13px; color: var(--muted); margin-top: 6px; display: none; }
+  .card.expanded .desc { display: block; }
+  .badge { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; font-weight: 600; }
+  .badge.clash { background: var(--bad); color: #fff; }
+  .badge.tight { background: var(--warn); color: #1a1300; }
+  .badge.ok { background: var(--good); color: #04210f; }
+  a.maps { color: var(--accent2); text-decoration: none; }
+  a.maps:hover { text-decoration: underline; }
+  .agenda { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .agenda h2 { margin: 0 0 4px; font-size: 15px; }
+  .agenda-row { display: flex; gap: 10px; align-items: baseline; padding: 7px 0; border-top: 1px solid var(--line); }
+  .agenda-row:first-of-type { border-top: 0; }
+  .agenda-row .t { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .travel { font-size: 12px; color: var(--muted); padding: 3px 0 3px 4px; }
+  .travel.bad { color: var(--bad); } .travel.tight { color: var(--warn); }
+  .empty { color: var(--muted); padding: 30px 0; text-align: center; }
+  .count { font-size: 13px; color: var(--muted); }
+  .hide { display: none; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; padding: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Cannes Lions 2026 — <span>What's On</span></h1>
+  <div class="controls">
+    <div class="days" id="days"></div>
+    <span class="spacer"></span>
+    <button id="viewToggle" class="chip">★ My agenda <span class="count" id="goingCount"></span></button>
+    <button id="exportBtn" class="primary chip">⬇ Export .ics</button>
+  </div>
+</header>
+<main>
+  <div class="hosts" id="hosts"></div>
+  <div id="schedule"></div>
+  <div id="agenda" class="hide"></div>
+</main>
+<footer id="footer">Loading…</footer>
+
+<script>
+const PARIS_OFFSET = "+02:00"; // CEST in June
+const STORE_KEY = "cannes2026.going";
+let SESSIONS = [], VENUES = {}, WALK = {}, HOST_COLORS = {};
+let activeDay = null, hostFilter = new Set(), showAgenda = false;
+let going = new Set(JSON.parse(localStorage.getItem(STORE_KEY) || "[]"));
+
+const palette = ["#ffcf3f","#4f8cff","#ff6b9d","#34c759","#b07cff","#ff9f0a","#2dd4bf","#f87171","#a3e635","#22d3ee","#f472b6","#facc15"];
+
+function saveGoing() { localStorage.setItem(STORE_KEY, JSON.stringify([...going])); }
+function fmtTime(iso) { const d = new Date(iso); return d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" }); }
+function dayKey(iso) { return new Date(iso).toLocaleDateString("en-CA", { timeZone: "Europe/Paris" }); }
+function dayLabel(key) { const d = new Date(key + "T12:00:00+02:00"); return d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "Europe/Paris" }); }
+function venue(id) { return VENUES[id] || { name: id || "TBC", address: "", lat: null, lng: null }; }
+function walkMin(a, b) { return (WALK[a] && WALK[a][b] != null) ? WALK[a][b] : null; }
+function overlaps(a, b) { return new Date(a.start) < new Date(b.end) && new Date(b.start) < new Date(a.end); }
+
+async function load() {
+  try {
+    const [s, v] = await Promise.all([
+      fetch("data/sessions.json").then(r => r.json()),
+      fetch("data/venues.json").then(r => r.json()),
+    ]);
+    SESSIONS = (s.sessions || []).filter(x => x.start && x.title);
+    (v.venues || []).forEach(x => VENUES[x.id] = x);
+    WALK = v.walkMatrix || {};
+  } catch (e) {
+    document.getElementById("footer").textContent = "Could not load data. If opening locally, run a static server (e.g. `python3 -m http.server`) — browsers block fetch on file://.";
+    return;
+  }
+  const hosts = [...new Set(SESSIONS.map(s => s.host))].sort();
+  hosts.forEach((h, i) => HOST_COLORS[h] = palette[i % palette.length]);
+  hostFilter = new Set(hosts);
+  const days = [...new Set(SESSIONS.map(s => dayKey(s.start)))].sort();
+  activeDay = days[0];
+  renderDays(days); renderHosts(hosts); render();
+  document.getElementById("footer").innerHTML = `${SESSIONS.length} sessions across ${hosts.length} hosts · times shown in Cannes local time (Europe/Paris) · your picks are saved in this browser`;
+}
+
+function renderDays(days) {
+  const el = document.getElementById("days"); el.innerHTML = "";
+  days.forEach(k => {
+    const b = document.createElement("button");
+    b.textContent = dayLabel(k); b.className = k === activeDay ? "active" : "";
+    b.onclick = () => { activeDay = k; showAgenda = false; syncView(); render(); };
+    el.appendChild(b);
+  });
+}
+
+function renderHosts(hosts) {
+  const el = document.getElementById("hosts"); el.innerHTML = "";
+  hosts.forEach(h => {
+    const b = document.createElement("button");
+    b.className = "chip" + (hostFilter.has(h) ? "" : " off");
+    b.style.borderColor = HOST_COLORS[h];
+    b.innerHTML = `<span style="color:${HOST_COLORS[h]}">●</span> ${h}`;
+    b.onclick = () => { hostFilter.has(h) ? hostFilter.delete(h) : hostFilter.add(h); renderHosts(hosts); render(); };
+    el.appendChild(b);
+  });
+}
+
+function syncView() {
+  document.getElementById("schedule").classList.toggle("hide", showAgenda);
+  document.getElementById("agenda").classList.toggle("hide", !showAgenda);
+  document.getElementById("hosts").classList.toggle("hide", showAgenda);
+  document.querySelectorAll("#days button").forEach(b => b.disabled = false);
+  document.getElementById("viewToggle").classList.toggle("active", showAgenda);
+}
+
+function render() {
+  document.getElementById("goingCount").textContent = going.size ? `(${going.size})` : "";
+  if (showAgenda) return renderAgenda();
+  const el = document.getElementById("schedule"); el.innerHTML = "";
+  const todays = SESSIONS
+    .filter(s => dayKey(s.start) === activeDay && hostFilter.has(s.host))
+    .sort((a, b) => a.start < b.start ? -1 : a.start > b.start ? 1 : 0);
+  if (!todays.length) { el.innerHTML = `<div class="empty">No sessions match. Toggle hosts back on above.</div>`; return; }
+  // group by start time
+  let lastSlot = null, slotEl;
+  todays.forEach(s => {
+    const slot = fmtTime(s.start);
+    if (slot !== lastSlot) {
+      const h = document.createElement("div"); h.className = "slot-time"; h.textContent = slot;
+      el.appendChild(h);
+      slotEl = document.createElement("div"); slotEl.className = "cards"; el.appendChild(slotEl);
+      lastSlot = slot;
+    }
+    slotEl.appendChild(card(s));
+  });
+}
+
+function card(s) {
+  const c = document.createElement("div");
+  c.className = "card" + (going.has(s.id) ? " going" : "");
+  c.style.setProperty("--host", HOST_COLORS[s.host] || "#888");
+  const v = venue(s.venueId);
+  const clash = going.has(s.id) ? null : conflictBadge(s);
+  c.innerHTML = `
+    <div class="check">${going.has(s.id) ? "✅" : "＋"}</div>
+    <div class="title">${esc(s.title)}</div>
+    <div class="meta">
+      <span class="host-tag">${esc(s.host)}</span>
+      <span>${fmtTime(s.start)}–${fmtTime(s.end)}</span>
+      <span>📍 ${mapsLink(v)}</span>
+      ${clash || ""}
+    </div>
+    ${s.description ? `<div class="desc">${esc(s.description)} ${s.url ? `· <a class="maps" href="${esc(s.url)}" target="_blank" rel="noopener">details ↗</a>` : ""}</div>` : ""}`;
+  c.querySelector(".check").onclick = (e) => { e.stopPropagation(); toggleGoing(s.id); };
+  c.onclick = () => c.classList.toggle("expanded");
+  return c;
+}
+
+function conflictBadge(s) {
+  const picked = SESSIONS.filter(x => going.has(x.id));
+  if (picked.some(p => overlaps(p, s))) return `<span class="badge clash">clashes</span>`;
+  return "";
+}
+
+function toggleGoing(id) { going.has(id) ? going.delete(id) : going.add(id); saveGoing(); render(); }
+
+function mapsLink(v) {
+  if (!v.lat) return esc(v.name);
+  const q = encodeURIComponent(v.address || v.name);
+  return `<a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${q}">${esc(v.name)}</a>`;
+}
+
+function renderAgenda() {
+  const el = document.getElementById("agenda"); el.innerHTML = "";
+  const picked = SESSIONS.filter(s => going.has(s.id)).sort((a, b) => a.start < b.start ? -1 : 1);
+  if (!picked.length) { el.innerHTML = `<div class="empty">No sessions picked yet. Tap ＋ on sessions to build your agenda.</div>`; return; }
+  const byDay = {};
+  picked.forEach(s => (byDay[dayKey(s.start)] ??= []).push(s));
+  Object.keys(byDay).sort().forEach(day => {
+    const box = document.createElement("div"); box.className = "agenda"; box.style.marginBottom = "14px";
+    box.innerHTML = `<h2>${dayLabel(day)}</h2>`;
+    const list = byDay[day];
+    list.forEach((s, i) => {
+      const v = venue(s.venueId);
+      const row = document.createElement("div"); row.className = "agenda-row";
+      const prev = list[i - 1];
+      let clash = prev && overlaps(prev, s) ? `<span class="badge clash">overlaps previous</span>` : "";
+      row.innerHTML = `<span class="t">${fmtTime(s.start)}–${fmtTime(s.end)}</span>
+        <span><strong style="color:${HOST_COLORS[s.host]}">${esc(s.host)}</strong> — ${esc(s.title)}<br>
+        <span style="color:var(--muted);font-size:13px">📍 ${mapsLink(v)} ${clash}</span></span>
+        <span class="spacer"></span>
+        <button class="chip" data-id="${s.id}">✕</button>`;
+      row.querySelector("button").onclick = () => toggleGoing(s.id);
+      box.appendChild(row);
+      // travel hint to next session
+      const next = list[i + 1];
+      if (next) box.appendChild(travelHint(s, next));
+    });
+    el.appendChild(box);
+  });
+}
+
+function travelHint(a, b) {
+  const div = document.createElement("div"); div.className = "travel";
+  const w = walkMin(a.venueId, b.venueId);
+  const gapMin = Math.round((new Date(b.start) - new Date(a.end)) / 60000);
+  if (a.venueId === b.venueId) { div.textContent = `↳ same venue · ${gapMin}min gap`; return div; }
+  if (w == null) { div.textContent = `↳ ${gapMin}min gap (walk time unknown)`; return div; }
+  let msg = `↳ 🚶 ~${w}min walk · ${gapMin}min gap`;
+  if (gapMin < 0) { div.className += " bad"; msg = `↳ ⚠️ overlaps — can't do both`; }
+  else if (gapMin < w) { div.className += " bad"; msg = `↳ ⚠️ ~${w}min walk but only ${gapMin}min gap — you won't make it`; }
+  else if (gapMin - w < 10) { div.className += " tight"; msg = `↳ 🚶 ~${w}min walk · only ${gapMin}min gap — tight`; }
+  div.textContent = msg; return div;
+}
+
+function esc(s = "") { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+// ---- ICS export of picked sessions ----
+function toIcsUtc(iso) {
+  const d = new Date(iso);
+  const p = n => String(n).padStart(2, "0");
+  return `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}T${p(d.getUTCHours())}${p(d.getUTCMinutes())}${p(d.getUTCSeconds())}Z`;
+}
+function icsEsc(s = "") { return String(s).replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;"); }
+function exportIcs() {
+  const picked = SESSIONS.filter(s => going.has(s.id));
+  if (!picked.length) { alert("Pick some sessions first (tap ＋)."); return; }
+  const now = toIcsUtc(new Date().toISOString());
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//cannes-lions-2026//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Cannes Lions 2026"];
+  picked.forEach(s => {
+    const v = venue(s.venueId);
+    lines.push("BEGIN:VEVENT",
+      `UID:${s.id}@cannes-lions-2026`,
+      `DTSTAMP:${now}`,
+      `DTSTART:${toIcsUtc(s.start)}`,
+      `DTEND:${toIcsUtc(s.end)}`,
+      `SUMMARY:${icsEsc(`[${s.host}] ${s.title}`)}`,
+      `LOCATION:${icsEsc((v.name || "") + (v.address ? ", " + v.address : ""))}`,
+      `DESCRIPTION:${icsEsc((s.description || "") + (s.url ? "\n" + s.url : ""))}`,
+      s.url ? `URL:${icsEsc(s.url)}` : null,
+      "END:VEVENT");
+  });
+  lines.push("END:VCALENDAR");
+  const blob = new Blob([lines.filter(Boolean).join("\r\n")], { type: "text/calendar" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "cannes-lions-2026.ics"; a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+document.getElementById("exportBtn").onclick = exportIcs;
+document.getElementById("viewToggle").onclick = () => { showAgenda = !showAgenda; syncView(); render(); };
+load();
+</script>
+</body>
+</html>
