@@ -55,7 +55,7 @@ Everything downstream reads only `data/sessions.json`. Each session:
 | **Official Cannes Lions programme** | `scripts/pull-official.mjs` — the page's public `/api/schedule` JSON (no login) | ✅ ~250 sessions, auto |
 | **Sport Beach** (Stagwell) | `scripts/pull-sportbeach.mjs` — reads the agenda embedded in the page's `__NEXT_DATA__` | ✅ 64 sessions, auto |
 | **Inkwell Beach** | `scripts/pull-luma.mjs` — public lu.ma calendar JSON, no login | ✅ 15 sessions, auto |
-| **Canva Creative Cabana** | `scripts/pull-canva.mjs` — headless Chromium clears Cloudflare, then reconstructs the agenda from the Canva design's positioned text | ✅ 30 sessions (Mon–Wed; Thu doesn't render coordinates) |
+| **Canva Creative Cabana** | `scripts/pull-canva.mjs` (Mon–Wed, auto) + `data/raw/canva-thursday.json` (Thu, hand-reconstructed from the page's scrambled hidden layer) | ✅ 38 sessions (Mon–Thu) |
 | **AI & Tech Sandbox** | `scripts/pull-aisandbox.mjs` — parses the agenda pasted into `data/sources/aisandbox.txt` (site is DataDome-blocked, grabbed from a real browser) | ✅ 25 sessions |
 
 > The official programme already lists many brand activations (Sport Beach, Meta

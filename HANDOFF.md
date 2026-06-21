@@ -65,10 +65,14 @@ Sport Beach, Inkwell Beach; cross-source duplicates de-duped by title+start).
   tz at the top (blue) and the real Cannes time on the `🕑 … (CEST)` line (black);
   the parser uses the CEST line. Added an `aisandbox` venue (Miramar Beach).
 
-### Still pending
-- **Canva Thursday 25 June** — the other days are in; Thursday's text nodes render
-  with x=0 (no layout box) so columns can't be separated. Would need a manual grab
-  like AI & Tech Sandbox, or a DOM-order based extraction.
+- **Canva Thursday 25 June** — DONE. Thursday renders in a scrambled hidden layer
+  (x=0, jumbled DOM order), so it was reconstructed by hand from the captured text
+  into `data/raw/canva-thursday.json` (8 sessions). `pull-canva.mjs` still auto-pulls
+  Mon–Wed; Thursday is the one committed/static file.
+
+### Nothing major pending
+All five sources are in (389 sessions). If any agenda gains sessions later, re-run
+the relevant puller (or re-grab the text for the manual ones) + `normalize.mjs`.
 
 ## NEXT STEPS (in the new environment)
 
