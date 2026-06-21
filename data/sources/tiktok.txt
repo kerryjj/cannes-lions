@@ -1,0 +1,32 @@
+SOURCE: TikTok Garden @ Cannes Lions 2026 (pasted manually 2026-06-21)
+Venue: TikTok Garden, hosted at the Carlton Cannes (58 Bd de la Croisette).
+Times are Cannes local (CEST) -> +02:00. Each day has a theme line.
+
+June 22 — Monday — "Where creative energy begins"
+12:30–13:00  Smarter Creativity, Stronger AI (in partnership with WARC)
+13:30–14:00  TikTok Next: Vibe Check
+14:30–15:00  From fleeting to unforgettable: The science of why some brands live in your head and others don't (Jeff Greenspoon & Moritz Bartsch; Kantar BrandZ)
+15:30–16:00  How Starbucks x TikTok Scales the Barista POV
+16:30–17:00  Looking for the One on TikTok One
+
+June 23 — Tuesday — "Where ideas become craft"
+12:30–13:15  Short-form is Not Short of Impact (Mark Ritson)
+13:45–14:15  Create with Craft to Win the Feed (Symphony Creative Studio)
+14:45–15:15  Storytelling on TikTok's Biggest Stage
+15:45–16:15  Fan Edit to Full Time
+
+June 24 — Wednesday — "Where culture and commerce take form"
+12:30–13:00  Maximize Discoverability with Creator-Powered Scale
+13:30–14:00  From In-Feed to In-Store
+14:30–15:00  Creating with Confidence in Complex Categories
+15:30–16:00  TikTok: Where the World Watches Sports
+16:30–17:00  From Croisette to Cart: A TikTok LIVE Shopping Experience
+
+June 25 — Thursday — "Where creativity becomes business impact"
+12:30–13:00  No More Silos: When Paid and Organic Collide
+13:30–14:00  The Logic of Brand Love: The Reality Behind Why Brands Get Chosen (TikTok Market Scope)
+14:30–15:00  Make it Your Way: TikTok Tools that Power Quality Creativity
+15:30–16:00  Cruising Into Culture: From Moment to Momentum (TikTok x Virgin Voyages, #paid)
+16:30–17:00  The Future Belongs to the Curious: AI, Creativity, and the New Era of Marketing (Cliff Obrecht & George Howes, Canva; Isobel Sita Lumsden, TikTok)
+
+Full descriptions retained in data/raw/tiktok.json.

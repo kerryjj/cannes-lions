@@ -58,6 +58,7 @@ Everything downstream reads only `data/sessions.json`. Each session:
 | **Canva Creative Cabana** | `scripts/pull-canva.mjs` (Mon–Wed, auto) + `data/raw/canva-thursday.json` (Thu, hand-reconstructed from the page's scrambled hidden layer) | ✅ 38 sessions (Mon–Thu) |
 | **AI & Tech Sandbox** | `scripts/pull-aisandbox.mjs` — parses the agenda pasted into `data/sources/aisandbox.txt` (site is DataDome-blocked, grabbed from a real browser) | ✅ 25 sessions |
 | **Microsoft Gardens** | `data/raw/microsoft.json` — hand-built from the pasted agenda in `data/sources/microsoft.txt` | ✅ 18 sessions |
+| **TikTok Garden** | `data/raw/tiktok.json` — hand-built from the pasted agenda in `data/sources/tiktok.txt` (hosted at the Carlton) | ✅ 19 sessions |
 
 > The official programme already lists many brand activations (Sport Beach, Meta
 > Beach, Microsoft Garden, Canva Cabana, LinkedIn Rooftop, Amazon Port, etc.), so a

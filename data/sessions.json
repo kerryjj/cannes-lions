@@ -262,7 +262,7 @@
       "start": "2026-06-22T11:00:00+02:00",
       "end": "2026-06-22T13:00:00+02:00",
       "description": "Now in its third year, the Black Joy Brunch returns to Cannes Lions — this time in partnership with Microsoft at Microsoft Gardens. A celebration of Black leaders in media and beyond, setting the tone for bold conversations, meaningful connections, and unbridled joy as Cannes Lions 2026 begins. Private event — express interest via the registration link and the host will follow up to confirm.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "https://blackjoybrunch.splashthat.com/",
       "tags": [
         "microsoft",
@@ -602,6 +602,23 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-22-1230-smarter-creativity-stronger-ai",
+      "title": "Smarter Creativity, Stronger AI",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-22T12:30:00+02:00",
+      "end": "2026-06-22T13:00:00+02:00",
+      "description": "In partnership with WARC, a hands-on workflow showing how TikTok's first-party signals spark creativity with the community at its core.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "ai",
+        "creativity"
+      ]
+    },
+    {
       "id": "official-72616",
       "title": "From Local to Global: China Inside Out",
       "host": "Cannes Lions",
@@ -769,6 +786,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-22-1330-tiktok-next-vibe-check",
+      "title": "TikTok Next: Vibe Check",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-22T13:30:00+02:00",
+      "end": "2026-06-22T14:00:00+02:00",
+      "description": "Get an inside look at how brands can create what's trending next, today.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "trends"
+      ]
+    },
+    {
       "id": "official-73644",
       "title": "Creative Impact Unpacked: Can Creativity Win Models as Well as Minds?",
       "host": "Cannes Lions",
@@ -842,7 +875,7 @@
       "start": "2026-06-22T14:00:00+02:00",
       "end": "2026-06-22T14:30:00+02:00",
       "description": "Featuring Jennifer Kattula (Global CMO, Microsoft Advertising). Traditional leadership — defined by title, tenure, and certainty — is being redefined. As ideas move faster, the next generation of marketing leaders will be those who evolve in real time, stay closest to the work, and make the smartest calls, defined not by output but by what they shape and stand behind. A fireside chat on how leadership credibility is built today and why current leaders need to get their hands dirty now.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -984,6 +1017,23 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-22-1430-from-fleeting-to-unforgettable",
+      "title": "From fleeting to unforgettable: The science of why some brands live in your head and others don't",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-22T14:30:00+02:00",
+      "end": "2026-06-22T15:00:00+02:00",
+      "description": "Featuring Jeff Greenspoon & Moritz Bartsch. The most powerful brands don't just get noticed on TikTok — they get lodged, showing up mid-conversation, at the supermarket shelf, in the shower. TikTok's full-funnel platform is uniquely built to create that kind of mental residency, and now Kantar's 50 years of BrandZ data can prove it. A conversation that challenges the traditional marketing playbook.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "brand",
+        "kantar"
+      ]
+    },
+    {
       "id": "official-73903",
       "title": "How to Thrive in the Age of ‘More with Less’",
       "host": "Cannes Lions",
@@ -1040,7 +1090,7 @@
       "start": "2026-06-22T15:00:00+02:00",
       "end": "2026-06-22T15:30:00+02:00",
       "description": "Featuring: CMO, Commercial Cloud and AI, Microsoft. Brands have moved past pilots; the challenge now is scaling AI in ways that actually drive growth — embedding it into workflows, reshaping teams, and making it work across markets. Brand leaders share what it really takes to operationalize AI: what's working, what's breaking, and what's still unclear. Because the hard part of AI isn't the technology — it's the transformation around it.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -1200,6 +1250,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-22-1530-starbucks-barista-pov",
+      "title": "How Starbucks x TikTok Scales the Barista POV",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-22T15:30:00+02:00",
+      "end": "2026-06-22T16:00:00+02:00",
+      "description": "A conversation with Starbucks on the solutions built together, showcasing how brands can unlock the creative potential of their workforce at scale. Learn how to leverage employee-generated content to show up in culture authentically and drive results at the speed of TikTok.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "creators"
+      ]
+    },
+    {
       "id": "official-73347",
       "title": "Lessons in Creativity. What Africa Can Teach the World.",
       "host": "Cannes Lions",
@@ -1302,6 +1368,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-22-1630-looking-for-the-one",
+      "title": "Looking for the One on TikTok One",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-22T16:30:00+02:00",
+      "end": "2026-06-22T17:00:00+02:00",
+      "description": "TikTok plays creative matchmaker in real time, pairing brands with the right creators, sparking interactive co-creation, and turning chemistry into conversion.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "creators"
+      ]
+    },
+    {
       "id": "official-73476",
       "title": "DEBATE: Creative Taste is Not Opinion, But an Objective Truth",
       "host": "Cannes Lions",
@@ -1376,7 +1458,7 @@
       "start": "2026-06-22T19:00:00+02:00",
       "end": "2026-06-22T23:00:00+02:00",
       "description": "Featuring Yusuf Mehdi (EVP, Chief Consumer Marketing Officer, Microsoft), Mel Robbins (bestselling author and podcast host), and a DJ set by Sofi Tukker and Club 1BD. An evening of conversation and connection for creators and industry leaders, opening with a headline discussion on the evolving role of creators and the uniquely human qualities that drive creativity, curiosity, intuition, and storytelling — followed by music and celebration.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -1471,7 +1553,7 @@
       "start": "2026-06-23T07:30:00+02:00",
       "end": "2026-06-23T08:15:00+02:00",
       "description": "Featuring Aditi Shah (Peloton). Morning yoga by the ocean in the Microsoft Gardens — an uplifting, energetic session to get ready for a busy day in Cannes. Space is limited to the first 20 attendees; yoga mats, blocks, and sweat towels provided.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -1805,7 +1887,7 @@
       "start": "2026-06-23T11:00:00+02:00",
       "end": "2026-06-23T11:30:00+02:00",
       "description": "Featuring Keith Mercier (Industry Leader, WW Retail and Consumer Goods, Microsoft) interviewing leading CMOs. As consumers move from searching to delegating, marketing must shift from driving awareness to earning action. A discussion about execution: how CMOs are rethinking content, data, and measurement to show up in moments of intent when AI mediates the customer journey. In an AI-first world, brands win not by being remembered but by being selected.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -2034,7 +2116,7 @@
       "start": "2026-06-23T12:00:00+02:00",
       "end": "2026-06-23T12:30:00+02:00",
       "description": "Featuring: Community Lead, Entrepreneurs at ADCOLOR; Founder & CEO, Gild Creative Group & Represent; North American AI Advertising Director, Microsoft; SVP, Chief Communications Officer, LinkedIn. Drawing on LinkedIn's bestselling 'Open to Work: How to Get Ahead in the Age of AI', this candid discussion across AI, platforms, and the creator economy explores where AI actually carries the load for creative entrepreneurs — to get discovered, manage the day-to-day, and build the work — without diluting the expertise that makes them valuable.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -2188,6 +2270,22 @@
         "stagwell",
         "sport",
         "main stage"
+      ]
+    },
+    {
+      "id": "tiktok-2026-06-23-1230-short-form-not-short-of-impact",
+      "title": "Short-form is Not Short of Impact",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-23T12:30:00+02:00",
+      "end": "2026-06-23T13:15:00+02:00",
+      "description": "Featuring Mark Ritson. Short-form rewired discovery, not the fundamentals of marketing. Ritson shows why TikTok rewards the brands that still lead with strategy, brand-building creative, and media choices made with intent — cutting through the misconceptions to argue short-form can drive serious impact when the fundamentals are executed well.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "strategy"
       ]
     },
     {
@@ -2347,7 +2445,7 @@
       "start": "2026-06-23T13:30:00+02:00",
       "end": "2026-06-23T14:00:00+02:00",
       "description": "Featuring creators and founders including FORVR MOOD's co-founder. Today's creators are evolving beyond content to become founders, operators, and brand builders. This conversation explores how creators turn influence into real businesses — launching products, building teams, and owning their platforms — and how technology like Copilot and Microsoft 365 helps them scale their ideas and operate more like modern media companies.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -2404,6 +2502,23 @@
         "official",
         "awards-and-winners",
         "cannes lions deconstructed"
+      ]
+    },
+    {
+      "id": "tiktok-2026-06-23-1345-create-with-craft",
+      "title": "Create with Craft to Win the Feed",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-23T13:45:00+02:00",
+      "end": "2026-06-23T14:15:00+02:00",
+      "description": "Discover how TikTok's Symphony Creative Studio tools help brands scale creativity responsibly through transparency and authenticity.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "ai",
+        "creativity"
       ]
     },
     {
@@ -2618,6 +2733,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-23-1445-storytelling-biggest-stage",
+      "title": "Storytelling on TikTok's Biggest Stage",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-23T14:45:00+02:00",
+      "end": "2026-06-23T15:15:00+02:00",
+      "description": "Explore how brands turn moments into momentum by showing up where culture is created and shared. On TikTok, high-impact storytelling doesn't just capture attention — it builds lasting brand equity at scale.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "brand"
+      ]
+    },
+    {
       "id": "canva-2026-06-23-15-00-doubling-down-on-ai-for-creativity-and-personal",
       "title": "Doubling Down on AI for Creativity and Personal Connection Find out how global leaders are transforming",
       "host": "Canva",
@@ -2641,7 +2772,7 @@
       "start": "2026-06-23T15:00:00+02:00",
       "end": "2026-06-23T15:30:00+02:00",
       "description": "A conversation between Matt Derella (SVP, LinkedIn and Microsoft Advertising) and Annie Pearl (Corporate Vice President, Copilot Product, Microsoft). As AI becomes the operating system behind creativity, commerce and culture, who holds the power and who is accountable for how it is used? Explores how AI shifts influence from tools to systems, and why responsibility, trust and inclusion must be purposefully designed into AI at scale.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -2933,6 +3064,23 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-23-1545-fan-edit-to-full-time",
+      "title": "Fan Edit to Full Time",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-23T15:45:00+02:00",
+      "end": "2026-06-23T16:15:00+02:00",
+      "description": "Explore how brands with passionate TikTok fandoms give creators the tools and platform to lead, translating their creative prowess into coveted roles and massive stages.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "creators",
+        "fandom"
+      ]
+    },
+    {
       "id": "official-73069",
       "title": "Unscripted: How Stories Earn Attention across Culture and Media",
       "host": "Cannes Lions",
@@ -3156,7 +3304,7 @@
       "start": "2026-06-23T18:00:00+02:00",
       "end": "2026-06-23T20:00:00+02:00",
       "description": "Featuring: CVP and Global Creative Director, Microsoft AI. The Blueprint for Brand Growth Awards return for their third edition as a relaxed, invitation-only celebration at Microsoft Gardens — bringing together senior marketers and award-winning brands to recognize standout work, share perspectives, and enjoy a proper Cannes atmosphere by the sea.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "https://www.kantar.com/campaigns/blueprint-for-brand-growth-awards",
       "tags": [
         "microsoft",
@@ -3316,7 +3464,7 @@
       "start": "2026-06-24T09:00:00+02:00",
       "end": "2026-06-24T11:00:00+02:00",
       "description": "Invite-only two-part brunch on how agencies are being reshaped in real time. A fireside with Jay Pattisall (VP, Principal Analyst, Forrester) and Mollie Rosen (President, Member Experience, 4As) debuts 'The State of AI Inside Marketing Agencies, 2026', followed by a 4As-led executive panel with leaders from Publicis, Omnicom, dentsu, and WPP (and Expedia Group's CMO) on what AI in execution demands next — a shift from campaigns to always-on intelligence.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "https://www.aaaa.org/ai-in-execution-the-rise-of-the-ai-native-superagency/",
       "tags": [
         "microsoft",
@@ -3687,7 +3835,7 @@
       "start": "2026-06-24T11:30:00+02:00",
       "end": "2026-06-24T12:45:00+02:00",
       "description": "Featuring Rukmini Iyer, Sarvesh Nagpal, Nikhil Kolar and Paul Longo (Microsoft). As agents act as personal shoppers, decisions happen inside queries never seen — the funnel marketers spent 20 years optimizing collapses into a single step of machine reasoning. Introduces Brand Agents (your brand as an AI-powered personal shopper), how GEO differs from SEO, and what Microsoft Clarity reveals about how agents interpret your brand, closing with a panel on what's working in the new funnel.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -3929,6 +4077,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-24-1230-maximize-discoverability",
+      "title": "Maximize Discoverability with Creator-Powered Scale",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-24T12:30:00+02:00",
+      "end": "2026-06-24T13:00:00+02:00",
+      "description": "An in-depth look at how TikTok's brand discovery bundle pairs creator-powered momentum with always-on discovery pathways, so content is easy to create and easy to find.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "discovery"
+      ]
+    },
+    {
       "id": "official-73643",
       "title": "Creative Impact Unpacked: How Do We Bring Creativity Closer to Commerce?",
       "host": "Cannes Lions",
@@ -4083,7 +4247,7 @@
       "start": "2026-06-24T13:30:00+02:00",
       "end": "2026-06-24T14:00:00+02:00",
       "description": "Featuring Keith Lee (food critic, entrepreneur & content creator), Olandria Carthen (cultural influencer & entrepreneur), and Willonius Hatcher (comedian & AI storyteller). They share how they use their platforms to uplift communities, support HBCUs, and turn everyday moments into cultural influence — and how emerging tech like AI and Copilot helps them develop ideas, deepen engagement, and scale their impact.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -4123,6 +4287,22 @@
         "stagwell",
         "sport",
         "main stage"
+      ]
+    },
+    {
+      "id": "tiktok-2026-06-24-1330-from-in-feed-to-in-store",
+      "title": "From In-Feed to In-Store",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-24T13:30:00+02:00",
+      "end": "2026-06-24T14:00:00+02:00",
+      "description": "This conversation explores how marketers are building TikTok-native creative that shows up in the right environments, tells stronger stories, scales what works, and drives measurable outcomes.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "commerce"
       ]
     },
     {
@@ -4369,6 +4549,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-24-1430-confidence-complex-categories",
+      "title": "Creating with Confidence in Complex Categories",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-24T14:30:00+02:00",
+      "end": "2026-06-24T15:00:00+02:00",
+      "description": "How partners are turning complexity into competitive advantage. Through smart strategy, policy fluency, and creative execution, regulated brands are proving that even the most constrained categories can scale with confidence on TikTok.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "strategy"
+      ]
+    },
+    {
       "id": "canva-2026-06-24-15-00-imagination-is-the-defining-advantage-of-the-ai",
       "title": "Imagination Is the Defining Advantage of the AI Era",
       "host": "Canva",
@@ -4583,6 +4779,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-24-1530-where-the-world-watches-sports",
+      "title": "TikTok: Where the World Watches Sports",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-24T15:30:00+02:00",
+      "end": "2026-06-24T16:00:00+02:00",
+      "description": "The moment is live and the stakes are high. Explore how brands feed fandoms by turning real-time sports into cultural energy, community, and measurable growth on TikTok.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "sports"
+      ]
+    },
+    {
       "id": "official-71914",
       "title": "The Startling Power of Surprise",
       "host": "Cannes Lions",
@@ -4656,7 +4868,7 @@
       "start": "2026-06-24T16:30:00+02:00",
       "end": "2026-06-24T19:00:00+02:00",
       "description": "A casual, come-as-you-are Xbox Happy Hour at Microsoft Gardens. Try hands-on gaming experiences, challenge someone new, and get into easy conversations with marketers, creators, and industry folks — a laid-back way to play, connect, and enjoy great company along the Croisette.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -4713,6 +4925,23 @@
         "stagwell",
         "sport",
         "main stage"
+      ]
+    },
+    {
+      "id": "tiktok-2026-06-24-1630-croisette-to-cart-live-shopping",
+      "title": "From Croisette to Cart: A TikTok LIVE Shopping Experience",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-24T16:30:00+02:00",
+      "end": "2026-06-24T17:00:00+02:00",
+      "description": "Experience #TikTokMadeMeBuyIt IRL on the Riviera. Seasoned brands and creators share best practices and insider tips for creating a stream that keeps LIVE audiences active and ready to buy.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "commerce",
+        "live"
       ]
     },
     {
@@ -4870,7 +5099,7 @@
       "start": "2026-06-25T07:30:00+02:00",
       "end": "2026-06-25T08:15:00+02:00",
       "description": "Featuring Aditi Shah (Peloton). Morning yoga by the ocean in the Microsoft Gardens — an uplifting, energetic session to get ready for a busy day in Cannes. Space is limited to the first 20 attendees; yoga mats, blocks, and sweat towels provided.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -4948,7 +5177,7 @@
       "start": "2026-06-25T09:30:00+02:00",
       "end": "2026-06-25T11:00:00+02:00",
       "description": "Featuring: RVP, Global Media Sales, CE, Microsoft. AI is already reshaping how our world works — how we're hired, diagnosed, seen, served, and understood — yet the systems shaping this future are still built by a narrow set of voices. AI is often designed for women without being meaningfully shaped by women. This session examines why that gap is a product, business, and societal risk, and how to embed more voices so bias isn't built in at scale.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -5417,6 +5646,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-25-1230-no-more-silos",
+      "title": "No More Silos: When Paid and Organic Collide",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-25T12:30:00+02:00",
+      "end": "2026-06-25T13:00:00+02:00",
+      "description": "The lines between organic and paid are blurring as audiences, stories, and impact overlap. Discover how TikTok drives a holistic content strategy that can deliver and measure bigger, more cohesive results.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "strategy"
+      ]
+    },
+    {
       "id": "official-74873",
       "title": "WORKSHOP: Retire the Brainstorm To Be More Creative",
       "host": "Cannes Lions",
@@ -5579,6 +5824,22 @@
         "stagwell",
         "sport",
         "main stage"
+      ]
+    },
+    {
+      "id": "tiktok-2026-06-25-1330-logic-of-brand-love",
+      "title": "The Logic of Brand Love: The Reality Behind Why Brands Get Chosen",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-25T13:30:00+02:00",
+      "end": "2026-06-25T14:00:00+02:00",
+      "description": "The behavioral science behind what actually moves people from attention to action. Challenges the idea of instant love, diving into how it is truly built — and how TikTok Market Scope enables brands to understand and activate it.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "brand"
       ]
     },
     {
@@ -5813,6 +6074,22 @@
       ]
     },
     {
+      "id": "tiktok-2026-06-25-1430-make-it-your-way",
+      "title": "Make it Your Way: TikTok Tools that Power Quality Creativity",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-25T14:30:00+02:00",
+      "end": "2026-06-25T15:00:00+02:00",
+      "description": "Spotlights the TikTok tools that elevate high-quality content so creators' and brands' unique POV leads the story and success follows through reach, revenue, and recognition.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "creativity"
+      ]
+    },
+    {
       "id": "official-72883",
       "title": "Stop Advertising, Start Entertaining: Crafting Social Content People Actually Want",
       "host": "Cannes Lions",
@@ -5920,7 +6197,7 @@
       "start": "2026-06-25T15:30:00+02:00",
       "end": "2026-06-25T20:00:00+02:00",
       "description": "Featuring a fireside between Mark D'Arcy (CVP and Global Creative Director, Microsoft AI) and Ian Leslie, rethinking creative partnership in the age of AI — from Lennon & McCartney to human + machine, treating AI not as a tool but as a collaborator that pushes ideas further. The Gardens then become a playground for makers: turn ideas into reality with Microsoft Surface, from sketch to design to something real, all in a single night.",
-      "url": "",
+      "url": "https://events.microsoft.com/flow/microsoft/cannes26/sessioncatalog/page/sessioncatalog",
       "registerUrl": "",
       "tags": [
         "microsoft",
@@ -5994,6 +6271,23 @@
         "festival-talks",
         "cannes lions × warc",
         "creative impact"
+      ]
+    },
+    {
+      "id": "tiktok-2026-06-25-1530-cruising-into-culture",
+      "title": "Cruising Into Culture: From Moment to Momentum",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-25T15:30:00+02:00",
+      "end": "2026-06-25T16:00:00+02:00",
+      "description": "TikTok and Virgin Voyages built a creator-powered travel moment designed to move from ship to feed. Hear how immersive experience design, social storytelling, and creator marketing platform #paid helped drive cultural impact.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "creators",
+        "travel"
       ]
     },
     {
@@ -6078,6 +6372,23 @@
         "festival-talks",
         "l’oréal & meta",
         "creative impact"
+      ]
+    },
+    {
+      "id": "tiktok-2026-06-25-1630-future-belongs-to-the-curious",
+      "title": "The Future Belongs to the Curious: AI, Creativity, and the New Era of Marketing",
+      "host": "TikTok Garden",
+      "venueId": "carlton",
+      "start": "2026-06-25T16:30:00+02:00",
+      "end": "2026-06-25T17:00:00+02:00",
+      "description": "Featuring Cliff Obrecht (Co-Founder & COO, Canva), George Howes (Head of Canva Grow), and Isobel Sita Lumsden (Global Head of Business Marketing, TikTok). As creativity, data, and performance rapidly converge, the future belongs to the marketers bold enough to stay curious — exploring how AI is transforming how brands create, test, learn, and scale.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "tiktok",
+        "tiktok-garden",
+        "ai",
+        "canva"
       ]
     },
     {
