@@ -71,7 +71,11 @@ Sport Beach, Inkwell Beach; cross-source duplicates de-duped by title+start).
   Mon–Wed; Thursday is the one committed/static file.
 
 ### Nothing major pending
-All five sources are in (389 sessions). If any agenda gains sessions later, re-run
+Six sources are in (406 sessions: official, Sport Beach, Canva, AI & Tech Sandbox,
+Inkwell Beach, Microsoft Gardens). Microsoft Gardens is hand-built in
+`data/raw/microsoft.json` from `data/sources/microsoft.txt` (speaker names were
+missing from the grab; the precise "start – end CEST" range is used, not the rounded
+header time). If any agenda gains sessions later, re-run
 the relevant puller (or re-grab the text for the manual ones) + `normalize.mjs`.
 
 ## NEXT STEPS (in the new environment)

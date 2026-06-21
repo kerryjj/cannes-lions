@@ -1,0 +1,29 @@
+SOURCE: Microsoft Gardens @ Cannes Lions 2026 (pasted manually 2026-06-21)
+NOTE: Each block has a rounded header time AND a precise "start – end CEST" range;
+the range is authoritative (e.g. yoga header 7:00 AM but actual 7:30–8:15). Speaker
+names did not survive the grab (lines begin ", Role, Company"); roles/companies are
+kept as "Featuring:" detail, names mostly appear in the prose descriptions.
+Venue: Microsoft Gardens Stage (Ondine / Vilebrequin La Plage, 64 Bd de la Croisette).
+
+18 sessions.
+
+— Black Joy Brunch | Mon Jun 22 | 11:00 AM – 1:00 PM CEST | Register: https://blackjoybrunch.splashthat.com/
+— Who's the boss? | Mon Jun 22 | 2:00 – 2:30 PM CEST | Featuring: Global CMO, Microsoft Advertising (Jennifer Kattula)
+— AI is not the story anymore. Putting it to work is. | Mon Jun 22 | 3:00 – 3:30 PM CEST | Featuring: CMO, Commercial Cloud and AI, Microsoft
+— Microsoft Creator Night | Mon Jun 22 | 7:00 – 11:00 PM CEST | Featuring: Yusuf Mehdi (EVP, Chief Consumer Marketing Officer, Microsoft); Mel Robbins (Author/Podcast Host); Sofi Tukker (DJ)
+— Morning Yoga with Peloton Instructor, Aditi Shah | Tue Jun 23 | 7:30 – 8:15 AM CEST | Peloton
+— From answers to actions (AI has reshaped how people discover and connect with your brand) | Tue Jun 23 | 11:00 – 11:30 AM CEST | Featuring: Keith Mercier, Industry Leader WW Retail & Consumer Goods, Microsoft
+— Open to create: How AI makes creative entrepreneurs irreplaceable | Tue Jun 23 | 12:00 – 12:30 PM CEST | Featuring: Community Lead Entrepreneurs at ADCOLOR; Founder & CEO Gild Creative Group & Represent; North American AI Advertising Director Microsoft; SVP Chief Communications Officer LinkedIn
+— From Creator to CEO, Turning Influence Into a Business | Tue Jun 23 | 1:30 – 2:00 PM CEST | Featuring: Creator/Founder; Creator/Founder; Editor/Journalist; FORVR MOOD Co-Founder; Acquired Style
+— Who holds the power in the AI era? Leadership, responsibility, and the future of influence | Tue Jun 23 | 3:00 – 3:30 PM CEST | Featuring: Matt Derella (SVP, LinkedIn & Microsoft Advertising); Annie Pearl (CVP, Copilot Product, Microsoft)
+— Blueprint for Brand Growth Awards 2026 with Kantar | Tue Jun 23 | 6:00 – 8:00 PM CEST | Register: https://www.kantar.com/campaigns/blueprint-for-brand-growth-awards
+— The age of execution | The rise of the AI-native super agency | Wed Jun 24 | 9:00 – 11:00 AM CEST | Register: https://www.aaaa.org/ai-in-execution-the-rise-of-the-ai-native-superagency/
+— The new funnel: When agents do the choosing | Wed Jun 24 | 11:30 AM – 12:45 PM CEST | Featuring: Rukmini Iyer, Sarvesh Nagpal, Nikhil Kolar, Paul Longo (Microsoft)
+— The power of community, how creators build Influence that moves culture | Wed Jun 24 | 1:30 – 2:00 PM CEST | Featuring: Keith Lee; Olandria Carthen; Willonius Hatcher
+— Marketer Leadership in the AI Economy | Wed Jun 24 | 2:15 – 3:30 PM CEST | Featuring: Tim Frank (CVP Monetization, Microsoft); Linda Boff (Forbes); Roberto Carli (Microsoft)
+— The Sunset Session: Xbox Happy Hour | Wed Jun 24 | 4:30 – 7:00 PM CEST
+— Morning Yoga with Peloton Instructor, Aditi Shah | Thu Jun 25 | 7:30 – 8:15 AM CEST | Peloton
+— More voices. Smarter AI: from AI built for women to AI built with women | Thu Jun 25 | 9:30 – 11:00 AM CEST | Featuring: RVP, Global Media Sales CE, Microsoft
+— Closing Creative Night at Microsoft Gardens | Thu Jun 25 | 3:30 – 8:00 PM CEST | Featuring: Mark D'Arcy (CVP & Global Creative Director, Microsoft AI); Ian Leslie
+
+Full descriptions retained in data/raw/microsoft.json.

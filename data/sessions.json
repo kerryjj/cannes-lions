@@ -255,6 +255,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-22-1100-black-joy-brunch",
+      "title": "Black Joy Brunch",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-22T11:00:00+02:00",
+      "end": "2026-06-22T13:00:00+02:00",
+      "description": "Now in its third year, the Black Joy Brunch returns to Cannes Lions — this time in partnership with Microsoft at Microsoft Gardens. A celebration of Black leaders in media and beyond, setting the tone for bold conversations, meaningful connections, and unbridled joy as Cannes Lions 2026 begins. Private event — express interest via the registration link and the host will follow up to confirm.",
+      "url": "",
+      "registerUrl": "https://blackjoybrunch.splashthat.com/",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "brunch",
+        "networking"
+      ]
+    },
+    {
       "id": "official-76362",
       "title": "How to: Deploy the Most Expensive Influencer You’ll Ever Hire",
       "host": "Cannes Lions",
@@ -818,6 +835,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-22-1400-whos-the-boss",
+      "title": "Who's the boss?",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-22T14:00:00+02:00",
+      "end": "2026-06-22T14:30:00+02:00",
+      "description": "Featuring Jennifer Kattula (Global CMO, Microsoft Advertising). Traditional leadership — defined by title, tenure, and certainty — is being redefined. As ideas move faster, the next generation of marketing leaders will be those who evolve in real time, stay closest to the work, and make the smartest calls, defined not by output but by what they shape and stand behind. A fireside chat on how leadership credibility is built today and why current leaders need to get their hands dirty now.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "leadership",
+        "fireside"
+      ]
+    },
+    {
       "id": "official-71887",
       "title": "What I Learnt Changing Sides in Advertising",
       "host": "Cannes Lions",
@@ -996,6 +1030,23 @@
       "tags": [
         "luma",
         "inkwell"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-22-1500-ai-is-not-the-story",
+      "title": "AI is not the story anymore. Putting it to work is.",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-22T15:00:00+02:00",
+      "end": "2026-06-22T15:30:00+02:00",
+      "description": "Featuring: CMO, Commercial Cloud and AI, Microsoft. Brands have moved past pilots; the challenge now is scaling AI in ways that actually drive growth — embedding it into workflows, reshaping teams, and making it work across markets. Brand leaders share what it really takes to operationalize AI: what's working, what's breaking, and what's still unclear. Because the hard part of AI isn't the technology — it's the transformation around it.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "ai",
+        "panel"
       ]
     },
     {
@@ -1318,6 +1369,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-22-1900-microsoft-creator-night",
+      "title": "Microsoft Creator Night",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-22T19:00:00+02:00",
+      "end": "2026-06-22T23:00:00+02:00",
+      "description": "Featuring Yusuf Mehdi (EVP, Chief Consumer Marketing Officer, Microsoft), Mel Robbins (bestselling author and podcast host), and a DJ set by Sofi Tukker and Club 1BD. An evening of conversation and connection for creators and industry leaders, opening with a headline discussion on the evolving role of creators and the uniquely human qualities that drive creativity, curiosity, intuition, and storytelling — followed by music and celebration.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "party",
+        "creators"
+      ]
+    },
+    {
       "id": "official-73819",
       "title": "Monday Awards Show",
       "host": "Cannes Lions",
@@ -1393,6 +1461,23 @@
         "official",
         "experiences-around-cannes",
         "sport beach"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-23-0730-morning-yoga-aditi-shah",
+      "title": "Morning Yoga with Peloton Instructor, Aditi Shah",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-23T07:30:00+02:00",
+      "end": "2026-06-23T08:15:00+02:00",
+      "description": "Featuring Aditi Shah (Peloton). Morning yoga by the ocean in the Microsoft Gardens — an uplifting, energetic session to get ready for a busy day in Cannes. Space is limited to the first 20 attendees; yoga mats, blocks, and sweat towels provided.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "wellness",
+        "yoga"
       ]
     },
     {
@@ -1713,6 +1798,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-23-1100-from-answers-to-actions",
+      "title": "From answers to actions: AI has reshaped how people discover and connect with your brand",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-23T11:00:00+02:00",
+      "end": "2026-06-23T11:30:00+02:00",
+      "description": "Featuring Keith Mercier (Industry Leader, WW Retail and Consumer Goods, Microsoft) interviewing leading CMOs. As consumers move from searching to delegating, marketing must shift from driving awareness to earning action. A discussion about execution: how CMOs are rethinking content, data, and measurement to show up in moments of intent when AI mediates the customer journey. In an AI-first world, brands win not by being remembered but by being selected.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "ai",
+        "fireside"
+      ]
+    },
+    {
       "id": "official-74006",
       "title": "How to: Design Experiences People Can Actually Feel",
       "host": "Cannes Lions",
@@ -1922,6 +2024,23 @@
       "tags": [
         "luma",
         "inkwell"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-23-1200-open-to-create",
+      "title": "Open to create: How AI makes creative entrepreneurs irreplaceable",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-23T12:00:00+02:00",
+      "end": "2026-06-23T12:30:00+02:00",
+      "description": "Featuring: Community Lead, Entrepreneurs at ADCOLOR; Founder & CEO, Gild Creative Group & Represent; North American AI Advertising Director, Microsoft; SVP, Chief Communications Officer, LinkedIn. Drawing on LinkedIn's bestselling 'Open to Work: How to Get Ahead in the Age of AI', this candid discussion across AI, platforms, and the creator economy explores where AI actually carries the load for creative entrepreneurs — to get discovered, manage the day-to-day, and build the work — without diluting the expertise that makes them valuable.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "ai",
+        "creators"
       ]
     },
     {
@@ -2221,6 +2340,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-23-1330-from-creator-to-ceo",
+      "title": "From Creator to CEO, Turning Influence Into a Business",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-23T13:30:00+02:00",
+      "end": "2026-06-23T14:00:00+02:00",
+      "description": "Featuring creators and founders including FORVR MOOD's co-founder. Today's creators are evolving beyond content to become founders, operators, and brand builders. This conversation explores how creators turn influence into real businesses — launching products, building teams, and owning their platforms — and how technology like Copilot and Microsoft 365 helps them scale their ideas and operate more like modern media companies.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "creators",
+        "panel"
+      ]
+    },
+    {
       "id": "sportbeach-d69a4432-cb36-4f2a-a97a-c1b11f756615",
       "title": "Built From the Back: How the Greatest Comebacks in Sport Become the Greatest Brand Stories",
       "host": "Sport Beach",
@@ -2495,6 +2631,23 @@
         "canva",
         "creative-cabana",
         "in-the-c-suite"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-23-1500-who-holds-the-power",
+      "title": "Who holds the power in the AI era? Leadership, responsibility, and the future of influence",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-23T15:00:00+02:00",
+      "end": "2026-06-23T15:30:00+02:00",
+      "description": "A conversation between Matt Derella (SVP, LinkedIn and Microsoft Advertising) and Annie Pearl (Corporate Vice President, Copilot Product, Microsoft). As AI becomes the operating system behind creativity, commerce and culture, who holds the power and who is accountable for how it is used? Explores how AI shifts influence from tools to systems, and why responsibility, trust and inclusion must be purposefully designed into AI at scale.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "ai",
+        "leadership"
       ]
     },
     {
@@ -2996,6 +3149,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-23-1800-blueprint-brand-growth-awards",
+      "title": "Blueprint for Brand Growth Awards 2026 with Kantar",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-23T18:00:00+02:00",
+      "end": "2026-06-23T20:00:00+02:00",
+      "description": "Featuring: CVP and Global Creative Director, Microsoft AI. The Blueprint for Brand Growth Awards return for their third edition as a relaxed, invitation-only celebration at Microsoft Gardens — bringing together senior marketers and award-winning brands to recognize standout work, share perspectives, and enjoy a proper Cannes atmosphere by the sea.",
+      "url": "",
+      "registerUrl": "https://www.kantar.com/campaigns/blueprint-for-brand-growth-awards",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "awards",
+        "networking"
+      ]
+    },
+    {
       "id": "official-73846",
       "title": "Tuesday Awards Show",
       "host": "Cannes Lions",
@@ -3136,6 +3306,24 @@
         "official",
         "experiences-around-cannes",
         "amazon port"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-24-0900-age-of-execution-superagency",
+      "title": "The age of execution | The rise of the AI-native super agency",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-24T09:00:00+02:00",
+      "end": "2026-06-24T11:00:00+02:00",
+      "description": "Invite-only two-part brunch on how agencies are being reshaped in real time. A fireside with Jay Pattisall (VP, Principal Analyst, Forrester) and Mollie Rosen (President, Member Experience, 4As) debuts 'The State of AI Inside Marketing Agencies, 2026', followed by a 4As-led executive panel with leaders from Publicis, Omnicom, dentsu, and WPP (and Expedia Group's CMO) on what AI in execution demands next — a shift from campaigns to always-on intelligence.",
+      "url": "",
+      "registerUrl": "https://www.aaaa.org/ai-in-execution-the-rise-of-the-ai-native-superagency/",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "ai",
+        "agencies",
+        "panel"
       ]
     },
     {
@@ -3489,6 +3677,23 @@
         "official",
         "awards-and-winners",
         "cannes lions deconstructed"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-24-1130-the-new-funnel",
+      "title": "The new funnel: When agents do the choosing",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-24T11:30:00+02:00",
+      "end": "2026-06-24T12:45:00+02:00",
+      "description": "Featuring Rukmini Iyer, Sarvesh Nagpal, Nikhil Kolar and Paul Longo (Microsoft). As agents act as personal shoppers, decisions happen inside queries never seen — the funnel marketers spent 20 years optimizing collapses into a single step of machine reasoning. Introduces Brand Agents (your brand as an AI-powered personal shopper), how GEO differs from SEO, and what Microsoft Clarity reveals about how agents interpret your brand, closing with a panel on what's working in the new funnel.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "ai",
+        "panel"
       ]
     },
     {
@@ -3871,6 +4076,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-24-1330-power-of-community",
+      "title": "The power of community: how creators build influence that moves culture",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-24T13:30:00+02:00",
+      "end": "2026-06-24T14:00:00+02:00",
+      "description": "Featuring Keith Lee (food critic, entrepreneur & content creator), Olandria Carthen (cultural influencer & entrepreneur), and Willonius Hatcher (comedian & AI storyteller). They share how they use their platforms to uplift communities, support HBCUs, and turn everyday moments into cultural influence — and how emerging tech like AI and Copilot helps them develop ideas, deepen engagement, and scale their impact.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "creators",
+        "panel"
+      ]
+    },
+    {
       "id": "official-73834",
       "title": "Inside the Jury Room: Entertainment Lions for Music",
       "host": "Cannes Lions",
@@ -4001,6 +4223,22 @@
       ]
     },
     {
+      "id": "official-76695",
+      "title": "Marketer Leadership in the AI Economy",
+      "host": "Cannes Lions",
+      "venueId": "ondine",
+      "start": "2026-06-24T14:15:00+02:00",
+      "end": "2026-06-24T15:15:00+02:00",
+      "description": "Presented by Microsoft | LIONS B2B Industry Partner. Location: Microsoft Garden. Speakers: Tim Frank (CVP, Monetization, Microsoft); Linda Boff (President, CMO Network, Forbes); Roberto Carli (Partner, AI Economy , Microsoft). The strategic marketer is now navigating all three eras of the web. The first human-focused era rewarded the brands that showed up in search. The second rewards brands present in human-agent AI conversations. The third, the emerging agentic web, is an infrastructure shift many marketers haven’t grasped. Microsoft's Tim Frank opens exploring this tension, why it matters n",
+      "url": "https://www.canneslions.com/festival/programme/marketer-leadership-in-the-ai-economy-e1-76695",
+      "registerUrl": "",
+      "tags": [
+        "official",
+        "festival-talks",
+        "microsoft | lions b2b industry partner"
+      ]
+    },
+    {
       "id": "official-74126",
       "title": "Bronze and Silver Winners Announcement",
       "host": "Cannes Lions",
@@ -4046,22 +4284,6 @@
         "official",
         "festival-talks",
         "empower café | lions impact partner"
-      ]
-    },
-    {
-      "id": "official-76695",
-      "title": "Marketer Leadership in the AI Economy",
-      "host": "Cannes Lions",
-      "venueId": "ondine",
-      "start": "2026-06-24T14:15:00+02:00",
-      "end": "2026-06-24T15:15:00+02:00",
-      "description": "Presented by Microsoft | LIONS B2B Industry Partner. Location: Microsoft Garden. Speakers: Tim Frank (CVP, Monetization, Microsoft); Linda Boff (President, CMO Network, Forbes); Roberto Carli (Partner, AI Economy , Microsoft). The strategic marketer is now navigating all three eras of the web. The first human-focused era rewarded the brands that showed up in search. The second rewards brands present in human-agent AI conversations. The third, the emerging agentic web, is an infrastructure shift many marketers haven’t grasped. Microsoft's Tim Frank opens exploring this tension, why it matters n",
-      "url": "https://www.canneslions.com/festival/programme/marketer-leadership-in-the-ai-economy-e1-76695",
-      "registerUrl": "",
-      "tags": [
-        "official",
-        "festival-talks",
-        "microsoft | lions b2b industry partner"
       ]
     },
     {
@@ -4427,6 +4649,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-24-1630-sunset-session-xbox-happy-hour",
+      "title": "The Sunset Session: Xbox Happy Hour",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-24T16:30:00+02:00",
+      "end": "2026-06-24T19:00:00+02:00",
+      "description": "A casual, come-as-you-are Xbox Happy Hour at Microsoft Gardens. Try hands-on gaming experiences, challenge someone new, and get into easy conversations with marketers, creators, and industry folks — a laid-back way to play, connect, and enjoy great company along the Croisette.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "party",
+        "gaming"
+      ]
+    },
+    {
       "id": "official-76669",
       "title": "Marketing in the New Era of Sports",
       "host": "Cannes Lions",
@@ -4624,6 +4863,23 @@
       ]
     },
     {
+      "id": "microsoft-2026-06-25-0730-morning-yoga-aditi-shah",
+      "title": "Morning Yoga with Peloton Instructor, Aditi Shah",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-25T07:30:00+02:00",
+      "end": "2026-06-25T08:15:00+02:00",
+      "description": "Featuring Aditi Shah (Peloton). Morning yoga by the ocean in the Microsoft Gardens — an uplifting, energetic session to get ready for a busy day in Cannes. Space is limited to the first 20 attendees; yoga mats, blocks, and sweat towels provided.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "wellness",
+        "yoga"
+      ]
+    },
+    {
       "id": "official-73817",
       "title": "Exhibition of the Work: A Showcase of Creativity",
       "host": "Cannes Lions",
@@ -4682,6 +4938,23 @@
       "tags": [
         "official",
         "networking"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-25-0930-more-voices-smarter-ai",
+      "title": "More voices. Smarter AI: from AI built for women to AI built with women",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-25T09:30:00+02:00",
+      "end": "2026-06-25T11:00:00+02:00",
+      "description": "Featuring: RVP, Global Media Sales, CE, Microsoft. AI is already reshaping how our world works — how we're hired, diagnosed, seen, served, and understood — yet the systems shaping this future are still built by a narrow set of voices. AI is often designed for women without being meaningfully shaped by women. This session examines why that gap is a product, business, and societal risk, and how to embed more voices so bias isn't built in at scale.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "ai",
+        "panel"
       ]
     },
     {
@@ -5637,6 +5910,23 @@
         "festival-talks",
         "landor & saudia (airlines)",
         "innovation unwrapped"
+      ]
+    },
+    {
+      "id": "microsoft-2026-06-25-1530-closing-creative-night",
+      "title": "Closing Creative Night at Microsoft Gardens",
+      "host": "Microsoft Gardens",
+      "venueId": "ondine",
+      "start": "2026-06-25T15:30:00+02:00",
+      "end": "2026-06-25T20:00:00+02:00",
+      "description": "Featuring a fireside between Mark D'Arcy (CVP and Global Creative Director, Microsoft AI) and Ian Leslie, rethinking creative partnership in the age of AI — from Lennon & McCartney to human + machine, treating AI not as a tool but as a collaborator that pushes ideas further. The Gardens then become a playground for makers: turn ideas into reality with Microsoft Surface, from sketch to design to something real, all in a single night.",
+      "url": "",
+      "registerUrl": "",
+      "tags": [
+        "microsoft",
+        "microsoft-gardens",
+        "creators",
+        "fireside"
       ]
     },
     {
