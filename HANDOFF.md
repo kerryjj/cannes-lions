@@ -58,11 +58,17 @@ Sport Beach, Inkwell Beach; cross-source duplicates de-duped by title+start).
   render with x=0 (no layout box), so left/right columns can't be separated.
   This adapter is fragile: if Canva restyles, re-check the (x,y) thresholds.
 
-### Still pending (commercial anti-bot — not solvable from this network)
-- **AI & Tech Sandbox** (`aiandtechsandbox.com`) is behind **DataDome**, which
-  blocks even real headless Chromium from this datacenter IP (the TLS-intercepting
-  egress proxy changes the fingerprint). Needs a human browser grab.
-- **Canva Thursday** — see above; would need a different extraction (DOM order).
+- **AI & Tech Sandbox** — DONE via manual grab. `aiandtechsandbox.com` is DataDome-
+  protected (blocks server fetch AND headless Chromium from this IP), so the agenda
+  was pasted into `data/sources/aisandbox.txt` and `scripts/pull-aisandbox.mjs`
+  parses it → 25 sessions. IMPORTANT: that site shows the time in the VIEWER's local
+  tz at the top (blue) and the real Cannes time on the `🕑 … (CEST)` line (black);
+  the parser uses the CEST line. Added an `aisandbox` venue (Miramar Beach).
+
+### Still pending
+- **Canva Thursday 25 June** — the other days are in; Thursday's text nodes render
+  with x=0 (no layout box) so columns can't be separated. Would need a manual grab
+  like AI & Tech Sandbox, or a DOM-order based extraction.
 
 ## NEXT STEPS (in the new environment)
 

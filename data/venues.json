@@ -84,6 +84,13 @@
       "address": "Boulevard de la Croisette, 06400 Cannes",
       "lat": 43.5491,
       "lng": 7.0262
+    },
+    {
+      "id": "aisandbox",
+      "name": "AI & Tech Sandbox (Miramar Beach)",
+      "address": "Plage du Miramar, 65 Boulevard de la Croisette, 06400 Cannes",
+      "lat": 43.5484,
+      "lng": 7.0247
     }
   ],
   "walkMatrix": {
@@ -99,7 +106,8 @@
       "ondine": 10,
       "sportbeach": 9,
       "fqbeach": 14,
-      "influentialbeach": 12
+      "influentialbeach": 12,
+      "aisandbox": 10
     },
     "majestic": {
       "palais": 2,
@@ -113,7 +121,8 @@
       "ondine": 9,
       "sportbeach": 7,
       "fqbeach": 13,
-      "influentialbeach": 10
+      "influentialbeach": 10,
+      "aisandbox": 9
     },
     "jwmarriott": {
       "palais": 7,
@@ -127,7 +136,8 @@
       "ondine": 3,
       "sportbeach": 2,
       "fqbeach": 7,
-      "influentialbeach": 5
+      "influentialbeach": 5,
+      "aisandbox": 4
     },
     "carlton": {
       "palais": 9,
@@ -141,7 +151,8 @@
       "ondine": 1,
       "sportbeach": 1,
       "fqbeach": 5,
-      "influentialbeach": 2
+      "influentialbeach": 2,
+      "aisandbox": 2
     },
     "martinez": {
       "palais": 14,
@@ -155,7 +166,8 @@
       "ondine": 4,
       "sportbeach": 5,
       "fqbeach": 1,
-      "influentialbeach": 3
+      "influentialbeach": 3,
+      "aisandbox": 4
     },
     "spotifybeach": {
       "palais": 12,
@@ -169,7 +181,8 @@
       "ondine": 2,
       "sportbeach": 3,
       "fqbeach": 2,
-      "influentialbeach": 1
+      "influentialbeach": 1,
+      "aisandbox": 3
     },
     "croisette": {
       "palais": 8,
@@ -183,7 +196,8 @@
       "ondine": 2,
       "sportbeach": 1,
       "fqbeach": 6,
-      "influentialbeach": 4
+      "influentialbeach": 4,
+      "aisandbox": 3
     },
     "vega": {
       "palais": 2,
@@ -197,7 +211,8 @@
       "ondine": 9,
       "sportbeach": 8,
       "fqbeach": 13,
-      "influentialbeach": 11
+      "influentialbeach": 11,
+      "aisandbox": 9
     },
     "ondine": {
       "palais": 10,
@@ -211,7 +226,8 @@
       "ondine": 0,
       "sportbeach": 1,
       "fqbeach": 4,
-      "influentialbeach": 2
+      "influentialbeach": 2,
+      "aisandbox": 2
     },
     "sportbeach": {
       "palais": 9,
@@ -225,7 +241,8 @@
       "ondine": 1,
       "sportbeach": 0,
       "fqbeach": 5,
-      "influentialbeach": 3
+      "influentialbeach": 3,
+      "aisandbox": 2
     },
     "fqbeach": {
       "palais": 14,
@@ -239,7 +256,8 @@
       "ondine": 4,
       "sportbeach": 5,
       "fqbeach": 0,
-      "influentialbeach": 3
+      "influentialbeach": 3,
+      "aisandbox": 4
     },
     "influentialbeach": {
       "palais": 12,
@@ -253,7 +271,23 @@
       "ondine": 2,
       "sportbeach": 3,
       "fqbeach": 3,
-      "influentialbeach": 0
+      "influentialbeach": 0,
+      "aisandbox": 2
+    },
+    "aisandbox": {
+      "palais": 10,
+      "majestic": 9,
+      "jwmarriott": 4,
+      "carlton": 2,
+      "martinez": 4,
+      "spotifybeach": 3,
+      "croisette": 3,
+      "vega": 9,
+      "ondine": 2,
+      "sportbeach": 2,
+      "fqbeach": 4,
+      "influentialbeach": 2,
+      "aisandbox": 0
     }
   }
 }

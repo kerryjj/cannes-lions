@@ -30,6 +30,7 @@ node scripts/pull-official.mjs     # ~250 official Cannes Lions programme sessio
 node scripts/pull-sportbeach.mjs   # 64 Sport Beach (Stagwell) sessions
 node scripts/pull-luma.mjs         # Inkwell Beach + any other lu.ma calendars
 node scripts/pull-canva.mjs        # 30 Canva Creative Cabana sessions (needs Playwright)
+node scripts/pull-aisandbox.mjs    # 25 AI & Tech Sandbox sessions (parses data/sources/aisandbox.txt)
 node scripts/normalize.mjs         # rebuild data/sessions.json (de-dupes across sources)
 ```
 
@@ -55,7 +56,7 @@ Everything downstream reads only `data/sessions.json`. Each session:
 | **Sport Beach** (Stagwell) | `scripts/pull-sportbeach.mjs` — reads the agenda embedded in the page's `__NEXT_DATA__` | ✅ 64 sessions, auto |
 | **Inkwell Beach** | `scripts/pull-luma.mjs` — public lu.ma calendar JSON, no login | ✅ 15 sessions, auto |
 | **Canva Creative Cabana** | `scripts/pull-canva.mjs` — headless Chromium clears Cloudflare, then reconstructs the agenda from the Canva design's positioned text | ✅ 30 sessions (Mon–Wed; Thu doesn't render coordinates) |
-| AI & Tech Sandbox | `aiandtechsandbox.com` is behind **DataDome** — blocks even a real headless browser from this network | ⏳ blocked |
+| **AI & Tech Sandbox** | `scripts/pull-aisandbox.mjs` — parses the agenda pasted into `data/sources/aisandbox.txt` (site is DataDome-blocked, grabbed from a real browser) | ✅ 25 sessions |
 
 > The official programme already lists many brand activations (Sport Beach, Meta
 > Beach, Microsoft Garden, Canva Cabana, LinkedIn Rooftop, Amazon Port, etc.), so a
