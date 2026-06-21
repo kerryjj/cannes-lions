@@ -117,6 +117,7 @@ function normalizeJsonObjects(arr, host) {
     end: s.end || s.start,
     description: s.description || "",
     url: s.url || "",
+    registerUrl: s.registerUrl || "",
     tags: s.tags || [host.toLowerCase()],
   }));
 }

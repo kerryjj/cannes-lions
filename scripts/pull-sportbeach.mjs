@@ -87,7 +87,8 @@ const sessions = allEvents
         .filter(Boolean)
         .join(" ")
         .slice(0, 500),
-      url: e.registrationLink || URL,
+      url: URL, // the agenda page — for verifying time/place
+      registerUrl: e.registrationLink || "", // optional RSVP/registration link
       tags: ["sportbeach", "stagwell", "sport"].concat(
         subVenue ? [subVenue.toLowerCase()] : []
       ),

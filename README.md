@@ -101,3 +101,8 @@ the group. Each person's picks are saved in their own browser (localStorage).
   consecutive sessions, and warns when you can't physically make the next one.
 - **⬇ Export .ics** downloads your picks for Google / Apple / Outlook calendar,
   with the venue address in each event so Maps directions work from the calendar.
+- **verify ↗** link on every session (cards + My Agenda) opens the original
+  source listing so you can confirm the time and place yourself — a deep link to
+  the exact session where the source allows it (official programme, lu.ma), or the
+  source's agenda page otherwise (Sport Beach, Canva, AI & Tech Sandbox). Sport
+  Beach sessions also show an **RSVP ↗** link where registration is required.

@@ -179,9 +179,10 @@ function card(s) {
       <span class="host-tag">${esc(s.host)}</span>
       <span>${fmtTime(s.start)}–${fmtTime(s.end)}</span>
       <span>📍 ${mapsLink(v)}</span>
+      ${sourceLink(s)}
       ${clash || ""}
     </div>
-    ${s.description ? `<div class="desc">${esc(s.description)} ${s.url ? `· <a class="maps" href="${esc(s.url)}" target="_blank" rel="noopener">details ↗</a>` : ""}</div>` : ""}`;
+    ${s.description ? `<div class="desc">${esc(s.description)}</div>` : ""}`;
   c.querySelector(".check").onclick = (e) => { e.stopPropagation(); toggleGoing(s.id); };
   c.onclick = () => c.classList.toggle("expanded");
   return c;
@@ -194,6 +195,15 @@ function conflictBadge(s) {
 }
 
 function toggleGoing(id) { going.has(id) ? going.delete(id) : going.add(id); saveGoing(); render(); }
+
+// Link(s) back to the source so you can verify the time & place yourself.
+// `url` = the source agenda/listing; `registerUrl` = optional RSVP link.
+function sourceLink(s) {
+  const out = [];
+  if (s.url) out.push(`<a class="maps" href="${esc(s.url)}" target="_blank" rel="noopener" title="Verify on ${esc(s.host)}" onclick="event.stopPropagation()">verify ↗</a>`);
+  if (s.registerUrl) out.push(`<a class="maps" href="${esc(s.registerUrl)}" target="_blank" rel="noopener" title="Register / RSVP" onclick="event.stopPropagation()">RSVP ↗</a>`);
+  return out.length ? `<span>${out.join(" · ")}</span>` : "";
+}
 
 function mapsLink(v) {
   if (!v.lat) return esc(v.name);
@@ -218,7 +228,7 @@ function renderAgenda() {
       let clash = prev && overlaps(prev, s) ? `<span class="badge clash">overlaps previous</span>` : "";
       row.innerHTML = `<span class="t">${fmtTime(s.start)}–${fmtTime(s.end)}</span>
         <span><strong style="color:${HOST_COLORS[s.host]}">${esc(s.host)}</strong> — ${esc(s.title)}<br>
-        <span style="color:var(--muted);font-size:13px">📍 ${mapsLink(v)} ${clash}</span></span>
+        <span style="color:var(--muted);font-size:13px">📍 ${mapsLink(v)} ${sourceLink(s)} ${clash}</span></span>
         <span class="spacer"></span>
         <button class="chip" data-id="${s.id}">✕</button>`;
       row.querySelector("button").onclick = () => toggleGoing(s.id);
