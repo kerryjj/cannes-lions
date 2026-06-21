@@ -145,10 +145,20 @@ if (all.length === 0) {
   process.exit(0);
 }
 
-// de-dupe by id, sort by start
+// de-dupe by id first, then collapse the same session arriving from two sources
+// (same title + same start time) — keep the richer entry (longer description).
 const byId = new Map();
 for (const s of all) byId.set(s.id, s);
-const sessions = [...byId.values()].sort((a, b) => (a.start < b.start ? -1 : 1));
+
+const byTitleTime = new Map();
+for (const s of byId.values()) {
+  const key = `${(s.title || "").toLowerCase().trim()}|${s.start}`;
+  const existing = byTitleTime.get(key);
+  if (!existing || (s.description || "").length > (existing.description || "").length) {
+    byTitleTime.set(key, s);
+  }
+}
+const sessions = [...byTitleTime.values()].sort((a, b) => (a.start < b.start ? -1 : 1));
 
 writeFileSync(
   OUT_PATH,

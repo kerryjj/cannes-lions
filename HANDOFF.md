@@ -43,11 +43,22 @@ works. Two real sources are now in via reproducible pullers:
 `data/sessions.json` now holds **79 real sessions** (seed rows removed). Rebuild with
 the two pullers + `node scripts/normalize.mjs`.
 
-### Still pending (bot-protected / login-walled — need a headless browser or grab)
-- **Canva** (`canva.com/events/cannes/`) and **AI & Tech Sandbox**
-  (`aiandtechsandbox.com/agenda`) both return HTTP 403 to plain fetch and are
-  JS-rendered. Need Playwright/headless or the in-browser grab script.
-- **Official programme** — still behind LIONS login + WAF (see step 3 below).
+- **Official Cannes Lions programme** — turned out to be **PUBLIC** (not login-walled).
+  `node scripts/pull-official.mjs` hits `canneslions.com/api/schedule?siteName=canneslions`
+  → ~250 sessions across 22–26 June, including many brand activations.
+
+`data/sessions.json` now holds **~326 real sessions** (3 hosts: Cannes Lions,
+Sport Beach, Inkwell Beach; cross-source duplicates de-duped by title+start).
+
+### Still pending (commercial anti-bot — not solvable from this network)
+- **Canva detailed agenda** lives in an iframe at `public.canva.site/cannes`.
+  Cloudflare's challenge *is* passable with full headless Chromium (Playwright),
+  but the schedule is a Canva *design* (absolutely-positioned text fragments), so
+  there's no clean JSON to parse — would need positional reconstruction. The
+  official feed already has the umbrella Canva Cabana entry.
+- **AI & Tech Sandbox** (`aiandtechsandbox.com`) is behind **DataDome**, which
+  blocks even real headless Chromium from this datacenter IP (TLS-intercepting
+  egress proxy changes the fingerprint). Needs a human browser grab.
 
 ## NEXT STEPS (in the new environment)
 

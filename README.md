@@ -26,9 +26,10 @@ index.html             # the whole app (one file, vanilla JS, loads data/*.json)
 Refresh the data anytime with:
 
 ```bash
+node scripts/pull-official.mjs     # ~250 official Cannes Lions programme sessions
 node scripts/pull-sportbeach.mjs   # 64 Sport Beach (Stagwell) sessions
 node scripts/pull-luma.mjs         # Inkwell Beach + any other lu.ma calendars
-node scripts/normalize.mjs         # rebuild data/sessions.json
+node scripts/normalize.mjs         # rebuild data/sessions.json (de-dupes across sources)
 ```
 
 Everything downstream reads only `data/sessions.json`. Each session:
@@ -43,10 +44,15 @@ Everything downstream reads only `data/sessions.json`. Each session:
 
 | Source | How | Status |
 | --- | --- | --- |
+| **Official Cannes Lions programme** | `scripts/pull-official.mjs` — the page's public `/api/schedule` JSON (no login) | ✅ ~250 sessions, auto |
 | **Sport Beach** (Stagwell) | `scripts/pull-sportbeach.mjs` — reads the agenda embedded in the page's `__NEXT_DATA__` | ✅ 64 sessions, auto |
 | **Inkwell Beach** | `scripts/pull-luma.mjs` — public lu.ma calendar JSON, no login | ✅ 15 sessions, auto |
-| Canva, AI & Tech Sandbox | JS-rendered + bot-protected (403) — need a headless browser or the in-browser grab | ⏳ pending |
-| Official Cannes programme | LIONS Membership login + WAF | ⏳ needs browser grab (below) |
+| Canva (detailed daily agenda) | On `public.canva.site/cannes` — Cloudflare-protected (passable via headless Chromium) but rendered as a Canva design (positioned text, hard to parse) | ⏳ partial |
+| AI & Tech Sandbox | `aiandtechsandbox.com` is behind **DataDome** — blocks even a real headless browser from this network | ⏳ blocked |
+
+> The official programme already lists many brand activations (Sport Beach, Meta
+> Beach, Microsoft Garden, Canva Cabana, LinkedIn Rooftop, Amazon Port, etc.), so a
+> lot of the side programme is covered by `pull-official.mjs` alone.
 
 ## Adding a source
 
@@ -59,13 +65,12 @@ Everything downstream reads only `data/sessions.json`. Each session:
 3. If you add a new venue, add it to `data/venues.json` and re-run
    `node scripts/travel.mjs` to refresh walk times.
 
-### The official programme (login-walled)
+### The official programme (now public)
 
-`canneslions.com/festival/programme` is behind a WAF **and** a LIONS Membership
-login, so it can't be fetched from a server. Use `data/raw/bookmarklet-official.js`:
-run it in your own logged-in browser on the programme page; it downloads
-`official.json` which you drop into `data/raw/`. (You'll need to tweak the CSS
-selectors to match the live markup — it's a template.)
+`canneslions.com/festival/programme` turned out to be **public** — the page calls
+`/api/schedule?siteName=canneslions` directly with no login. `scripts/pull-official.mjs`
+hits that endpoint, so no browser/bookmarklet is needed. (The old
+`data/raw/bookmarklet-official.js` is kept only as a fallback.)
 
 ## Run locally
 
