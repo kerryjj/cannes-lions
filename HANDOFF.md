@@ -31,13 +31,23 @@ Decisions already made with the user:
 Pipeline is verified working end-to-end on seed data. `node scripts/travel.mjs` and
 `node scripts/normalize.mjs` both run clean.
 
-## THE BLOCKER (why real data isn't in yet)
-The **previous** environment had network access = **Trusted**, so every event host
-returned `Host not in allowlist: <host>. Add this host to your network egress settings`.
-That's the sandbox egress proxy, not the websites — no browser/UA trick gets around it.
+## THE BLOCKER — ✅ RESOLVED (2026-06-21)
+The previous environment's egress proxy returned `Host not in allowlist: <host>`
+for every event host. The new environment has open egress, so automated pulling
+works. Two real sources are now in via reproducible pullers:
+- **Sport Beach (Stagwell)** — 64 sessions — `node scripts/pull-sportbeach.mjs`
+  (agenda is in the page's `__NEXT_DATA__` blob at
+  `props.pageProps.initial.data.allEvents`; no login).
+- **Inkwell Beach** — 15 sessions — `node scripts/pull-luma.mjs` (public lu.ma JSON).
 
-**The user has now created a NEW environment with wider network access.** Verify it
-first (see next section). If hosts resolve, automated pulling is unblocked.
+`data/sessions.json` now holds **79 real sessions** (seed rows removed). Rebuild with
+the two pullers + `node scripts/normalize.mjs`.
+
+### Still pending (bot-protected / login-walled — need a headless browser or grab)
+- **Canva** (`canva.com/events/cannes/`) and **AI & Tech Sandbox**
+  (`aiandtechsandbox.com/agenda`) both return HTTP 403 to plain fetch and are
+  JS-rendered. Need Playwright/headless or the in-browser grab script.
+- **Official programme** — still behind LIONS login + WAF (see step 3 below).
 
 ## NEXT STEPS (in the new environment)
 

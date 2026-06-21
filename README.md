@@ -16,9 +16,19 @@ data/
   venues.json     # venues + lat/lng + computed walk-time matrix
   sessions.json   # THE normalized file the app reads (single source of truth)
 scripts/
-  travel.mjs      # venues.json lat/lng -> walk-time matrix (haversine estimate)
-  normalize.mjs   # data/raw/* -> data/sessions.json
-index.html        # the whole app (one file, vanilla JS, loads data/*.json)
+  pull-sportbeach.mjs  # Sport Beach agenda -> data/raw/sportbeach.json
+  pull-luma.mjs        # public lu.ma calendars -> data/raw/luma-<name>.json
+  travel.mjs           # venues.json lat/lng -> walk-time matrix (haversine estimate)
+  normalize.mjs        # data/raw/* -> data/sessions.json
+index.html             # the whole app (one file, vanilla JS, loads data/*.json)
+```
+
+Refresh the data anytime with:
+
+```bash
+node scripts/pull-sportbeach.mjs   # 64 Sport Beach (Stagwell) sessions
+node scripts/pull-luma.mjs         # Inkwell Beach + any other lu.ma calendars
+node scripts/normalize.mjs         # rebuild data/sessions.json
 ```
 
 Everything downstream reads only `data/sessions.json`. Each session:
@@ -28,6 +38,15 @@ Everything downstream reads only `data/sessions.json`. Each session:
 ```
 
 `start`/`end` are ISO8601 with the Paris offset (`+02:00`, CEST in June).
+
+## Sources pulled so far
+
+| Source | How | Status |
+| --- | --- | --- |
+| **Sport Beach** (Stagwell) | `scripts/pull-sportbeach.mjs` — reads the agenda embedded in the page's `__NEXT_DATA__` | ✅ 64 sessions, auto |
+| **Inkwell Beach** | `scripts/pull-luma.mjs` — public lu.ma calendar JSON, no login | ✅ 15 sessions, auto |
+| Canva, AI & Tech Sandbox | JS-rendered + bot-protected (403) — need a headless browser or the in-browser grab | ⏳ pending |
+| Official Cannes programme | LIONS Membership login + WAF | ⏳ needs browser grab (below) |
 
 ## Adding a source
 
