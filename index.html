@@ -281,11 +281,30 @@ function renderAgenda() {
   });
 }
 
+// Rough walking time between two rooms inside the same venue. The Palais is large
+// and the "Rotonde" stages (Rotonde Stage, The Forum, Global Creative Hub, Campus
+// Stage) sit in an adjacent wing, so moving between rooms isn't instant.
+const PALAIS_ROTONDE = /rotonde|forum|global creative|campus/i;
+function intraVenueMin(a, b) {
+  const ra = (a.room || "").trim().toLowerCase(), rb = (b.room || "").trim().toLowerCase();
+  if (!ra || !rb || ra === rb) return 0;
+  if (a.venueId === "palais") return PALAIS_ROTONDE.test(ra) === PALAIS_ROTONDE.test(rb) ? 5 : 7;
+  return 3; // other multi-area venues (Sport Beach decks, Microsoft Gardens, etc.)
+}
+
 function travelHint(a, b) {
   const div = document.createElement("div"); div.className = "travel";
   const w = walkMin(a.venueId, b.venueId);
   const gapMin = Math.round((new Date(b.start) - new Date(a.end)) / 60000);
-  if (a.venueId === b.venueId) { div.textContent = `↳ same venue · ${gapMin}min gap`; return div; }
+  if (a.venueId === b.venueId) {
+    const im = intraVenueMin(a, b);
+    if (im === 0) { div.textContent = `↳ same venue · ${gapMin}min gap`; return div; }
+    let msg = `↳ 🚶 ~${im}min between rooms · ${gapMin}min gap`;
+    if (gapMin < 0) { div.className += " bad"; msg = `↳ ⚠️ overlaps — can't do both`; }
+    else if (gapMin < im) { div.className += " bad"; msg = `↳ ⚠️ ~${im}min between rooms but only ${gapMin}min gap`; }
+    else if (gapMin - im < 5) { div.className += " tight"; msg = `↳ 🚶 ~${im}min between rooms · only ${gapMin}min gap — tight`; }
+    div.textContent = msg; return div;
+  }
   if (w == null) { div.textContent = `↳ ${gapMin}min gap (walk time unknown)`; return div; }
   let msg = `↳ 🚶 ~${w}min walk · ${gapMin}min gap`;
   if (gapMin < 0) { div.className += " bad"; msg = `↳ ⚠️ overlaps — can't do both`; }
