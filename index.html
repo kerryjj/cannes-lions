@@ -65,15 +65,15 @@
   footer { color: var(--muted); font-size: 12px; text-align: center; padding: 20px; }
   /* "Provided by greet.live" — subtle monochrome logo that blooms into the green
      brand on a light pill with a soft glow on hover. */
-  .greet-credit { display: inline-flex; align-items: center; gap: 9px; margin-top: 14px;
-    padding: 6px 14px; border-radius: 999px; border: 1px solid transparent; text-decoration: none;
-    color: var(--muted); transition: background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease; }
-  .greet-credit span { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; transition: color .25s ease; }
-  .greet-credit img { height: 17px; width: auto; display: block; filter: brightness(0) invert(1); opacity: .5;
-    transition: filter .25s ease, opacity .25s ease; }
-  .greet-credit:hover { background: #fff; border-color: #cfeccf; box-shadow: 0 6px 22px rgba(70,195,79,.30); transform: translateY(-1px); }
-  .greet-credit:hover img { filter: none; opacity: 1; }
-  .greet-credit:hover span { color: #2f7d3a; }
+  .greet-credit { display: inline-flex; align-items: center; gap: 10px; margin-top: 14px; text-decoration: none; color: var(--muted); }
+  .greet-credit .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; transition: color .25s ease; }
+  /* Greet has no dark-mode wordmark, so its real (green) logo sits on a small light
+     chip — legible and on-brand against the dark app, with a green-glow lift on hover. */
+  .greet-credit .greet-logo-chip { display: inline-flex; align-items: center; background: #fff; border-radius: 8px;
+    padding: 5px 10px; box-shadow: 0 1px 4px rgba(0,0,0,.35); transition: transform .25s ease, box-shadow .25s ease; }
+  .greet-credit .greet-logo-chip img { height: 16px; width: auto; display: block; }
+  .greet-credit:hover .greet-logo-chip { transform: translateY(-1px); box-shadow: 0 5px 18px rgba(70,195,79,.45); }
+  .greet-credit:hover .label { color: var(--text); }
 </style>
 </head>
 <body>
@@ -97,8 +97,8 @@
 <footer>
   <div id="footer">Loading…</div>
   <a class="greet-credit" href="https://greet.live" target="_blank" rel="noopener" title="Provided by greet.live">
-    <span>Provided by</span>
-    <img src="assets/greet-logo.png" alt="greet" />
+    <span class="label">Provided by</span>
+    <span class="greet-logo-chip"><img src="assets/greet-logo.png" alt="greet" /></span>
   </a>
 </footer>
 
