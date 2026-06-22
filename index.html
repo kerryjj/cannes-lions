@@ -26,6 +26,8 @@
   .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .days { display: flex; gap: 6px; flex-wrap: wrap; }
   button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel2); color: var(--text); padding: 6px 12px; border-radius: 999px; }
+  select.filter { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel2); color: var(--text); padding: 6px 12px; border-radius: 999px; max-width: 230px; }
+  select.filter.on { border-color: var(--accent2); color: var(--accent2); }
   button:hover { border-color: var(--muted); }
   button.active { background: var(--accent); color: #1a1300; border-color: var(--accent); font-weight: 600; }
   .chip { padding: 4px 10px; font-size: 13px; }
@@ -86,6 +88,7 @@
   <div class="controls">
     <div class="days" id="days"></div>
     <span class="spacer"></span>
+    <select id="venueFilter" class="filter" title="Filter by venue / stage"></select>
     <button id="viewToggle" class="chip">★ My agenda <span class="count" id="goingCount"></span></button>
     <button id="exportBtn" class="primary chip">⬇ Export .ics</button>
   </div>
@@ -107,7 +110,8 @@
 const PARIS_OFFSET = "+02:00"; // CEST in June
 const STORE_KEY = "cannes2026.going";
 let SESSIONS = [], VENUES = {}, WALK = {}, HOST_COLORS = {};
-let activeDay = null, hostFilter = new Set(), showAgenda = false;
+let activeDay = null, hostFilter = new Set(), showAgenda = false, venueFilter = "";
+const VSEP = String.fromCharCode(31); // unit separator: venueFilter value = "venueId" or "venueId" + VSEP + "room"
 let going = new Set(JSON.parse(localStorage.getItem(STORE_KEY) || "[]"));
 
 const palette = ["#ffcf3f","#4f8cff","#ff6b9d","#34c759","#b07cff","#ff9f0a","#2dd4bf","#f87171","#a3e635","#22d3ee","#f472b6","#facc15"];
@@ -140,7 +144,7 @@ async function load() {
   // Land on today if the festival is on, otherwise the first day.
   const todayKey = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/Paris" });
   activeDay = days.includes(todayKey) ? todayKey : days[0];
-  renderDays(days); renderHosts(hosts); render();
+  renderDays(days); renderHosts(hosts); renderVenueFilter(); render();
   document.getElementById("footer").innerHTML = `${SESSIONS.length} sessions across ${hosts.length} hosts · times shown in Cannes local time (Europe/Paris) · your picks are saved in this browser`;
 }
 
@@ -166,6 +170,43 @@ function renderHosts(hosts) {
   });
 }
 
+function renderVenueFilter() {
+  const sel = document.getElementById("venueFilter");
+  const byVenue = {};
+  SESSIONS.forEach(s => { (byVenue[s.venueId] ??= new Set()); if (s.room) byVenue[s.venueId].add(s.room); });
+  let html = `<option value="">All venues &amp; stages</option>`;
+  Object.keys(byVenue)
+    .map(id => [id, venue(id).name])
+    .sort((a, b) => a[1].localeCompare(b[1]))
+    .forEach(([id, name]) => {
+      const rooms = [...byVenue[id]].sort((a, b) => a.localeCompare(b));
+      if (rooms.length) {
+        html += `<optgroup label="${esc(name)}">`;
+        html += `<option value="${esc(id)}">All — ${esc(name)}</option>`;
+        rooms.forEach(r => (html += `<option value="${esc(id + VSEP + r)}">${esc(r)}</option>`));
+        html += `</optgroup>`;
+      } else {
+        html += `<option value="${esc(id)}">${esc(name)}</option>`;
+      }
+    });
+  sel.innerHTML = html;
+  sel.value = venueFilter;
+  sel.onchange = () => {
+    venueFilter = sel.value;
+    sel.classList.toggle("on", !!venueFilter);
+    showAgenda = false;
+    syncView();
+    render();
+  };
+}
+
+function matchVenue(s) {
+  if (!venueFilter) return true;
+  const i = venueFilter.indexOf(VSEP);
+  if (i < 0) return s.venueId === venueFilter;
+  return s.venueId === venueFilter.slice(0, i) && (s.room || "") === venueFilter.slice(i + 1);
+}
+
 function syncView() {
   document.getElementById("schedule").classList.toggle("hide", showAgenda);
   document.getElementById("agenda").classList.toggle("hide", !showAgenda);
@@ -179,9 +220,12 @@ function render() {
   if (showAgenda) return renderAgenda();
   const el = document.getElementById("schedule"); el.innerHTML = "";
   const todays = SESSIONS
-    .filter(s => dayKey(s.start) === activeDay && hostFilter.has(s.host))
+    .filter(s => dayKey(s.start) === activeDay && hostFilter.has(s.host) && matchVenue(s))
     .sort((a, b) => a.start < b.start ? -1 : a.start > b.start ? 1 : 0);
-  if (!todays.length) { el.innerHTML = `<div class="empty">No sessions match. Toggle hosts back on above.</div>`; return; }
+  if (!todays.length) {
+    const hint = venueFilter ? "Nothing at that venue/stage on this day — try another day, or reset the venue filter." : "No sessions match. Toggle hosts back on above.";
+    el.innerHTML = `<div class="empty">${hint}</div>`; return;
+  }
   // group by start time
   let lastSlot = null, slotEl;
   todays.forEach(s => {
