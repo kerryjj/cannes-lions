@@ -56,6 +56,17 @@
   .count { font-size: 13px; color: var(--muted); }
   .hide { display: none; }
   footer { color: var(--muted); font-size: 12px; text-align: center; padding: 20px; }
+  /* "Provided by greet.live" — subtle monochrome logo that blooms into the green
+     brand on a light pill with a soft glow on hover. */
+  .greet-credit { display: inline-flex; align-items: center; gap: 9px; margin-top: 14px;
+    padding: 6px 14px; border-radius: 999px; border: 1px solid transparent; text-decoration: none;
+    color: var(--muted); transition: background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease; }
+  .greet-credit span { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; transition: color .25s ease; }
+  .greet-credit img { height: 17px; width: auto; display: block; filter: brightness(0) invert(1); opacity: .5;
+    transition: filter .25s ease, opacity .25s ease; }
+  .greet-credit:hover { background: #fff; border-color: #cfeccf; box-shadow: 0 6px 22px rgba(70,195,79,.30); transform: translateY(-1px); }
+  .greet-credit:hover img { filter: none; opacity: 1; }
+  .greet-credit:hover span { color: #2f7d3a; }
 </style>
 </head>
 <body>
@@ -73,7 +84,13 @@
   <div id="schedule"></div>
   <div id="agenda" class="hide"></div>
 </main>
-<footer id="footer">Loading…</footer>
+<footer>
+  <div id="footer">Loading…</div>
+  <a class="greet-credit" href="https://greet.live" target="_blank" rel="noopener" title="Provided by greet.live">
+    <span>Provided by</span>
+    <img src="assets/greet-logo.png" alt="greet" />
+  </a>
+</footer>
 
 <script>
 const PARIS_OFFSET = "+02:00"; // CEST in June
