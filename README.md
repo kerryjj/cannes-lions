@@ -52,7 +52,7 @@ Everything downstream reads only `data/sessions.json`. Each session:
 
 | Source | How | Status |
 | --- | --- | --- |
-| **Official Cannes Lions programme** | `scripts/pull-official.mjs` — the page's public `/api/schedule` JSON (no login) | ✅ ~250 sessions, auto |
+| **Official Cannes Lions programme** | `scripts/pull-official.mjs` — the public `/api/schedule` JSON, merged across all agenda types (default + LIONS Creators / Sport / B2B / Insights sub-programmes) | ✅ ~320 sessions, auto |
 | **Sport Beach** (Stagwell) | `scripts/pull-sportbeach.mjs` — reads the agenda embedded in the page's `__NEXT_DATA__` | ✅ 64 sessions, auto |
 | **Inkwell Beach** | `scripts/pull-luma.mjs` — public lu.ma calendar JSON, no login | ✅ 15 sessions, auto |
 | **Canva Creative Cabana** | `scripts/pull-canva.mjs` (Mon–Wed, auto) + `data/raw/canva-thursday.json` (Thu, hand-reconstructed from the page's scrambled hidden layer) | ✅ 38 sessions (Mon–Thu) |

@@ -16,8 +16,19 @@ import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const RAW_DIR = join(__dirname, "..", "data", "raw");
-const API =
-  "https://www.canneslions.com/api/schedule?siteName=canneslions&search=&agendaType=default";
+const apiUrl = (agendaType) =>
+  `https://www.canneslions.com/api/schedule?siteName=canneslions&search=&agendaType=${agendaType}`;
+// The "default" agenda omits the sub-programmes (each festival experience is its
+// own agendaType), so pull them all and merge — otherwise e.g. the LIONS Creators
+// Beach sessions are missing. See /festival/experiences.
+const AGENDA_TYPES = [
+  "default",
+  "lions-creators",
+  "lions-sport",
+  "lions-b2b",
+  "lions-insights",
+  "lions-global-forums",
+];
 
 function clean(html = "") {
   return String(html)
@@ -55,10 +66,25 @@ function mapVenue(loc = {}) {
   return "croisette"; // amazon port, miramar, cafes, etc. still land on the strip
 }
 
-const res = await fetch(API, { headers: { accept: "application/json" } });
-if (!res.ok) throw new Error(`Official API failed: HTTP ${res.status}`);
-const data = await res.json();
-const events = data.events || [];
+// Fetch every agenda type and merge, de-duping by eventId (sessions recur across
+// the default + sub-programme feeds).
+const byEventId = new Map();
+for (const agendaType of AGENDA_TYPES) {
+  const res = await fetch(apiUrl(agendaType), { headers: { accept: "application/json" } });
+  if (!res.ok) {
+    console.error(`  ${agendaType}: HTTP ${res.status} — skipping`);
+    continue;
+  }
+  const data = await res.json();
+  const evs = data.events || [];
+  let added = 0;
+  for (const e of evs) {
+    const key = String(e.eventId || `${e.titleSlug}`);
+    if (!byEventId.has(key)) { byEventId.set(key, e); added++; }
+  }
+  console.log(`  ${agendaType}: ${evs.length} events (+${added} new)`);
+}
+const events = [...byEventId.values()];
 
 const sessions = events
   .filter((e) => e.title && e.dateIso && e.startTime)
