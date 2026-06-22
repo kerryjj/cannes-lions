@@ -126,9 +126,12 @@ function overlaps(a, b) { return new Date(a.start) < new Date(b.end) && new Date
 
 async function load() {
   try {
+    // Cache-bust so returning visitors always get the latest data (GitHub Pages
+    // otherwise serves cached JSON and the schedule looks stale).
+    const bust = `?t=${Date.now()}`;
     const [s, v] = await Promise.all([
-      fetch("data/sessions.json").then(r => r.json()),
-      fetch("data/venues.json").then(r => r.json()),
+      fetch("data/sessions.json" + bust, { cache: "no-store" }).then(r => r.json()),
+      fetch("data/venues.json" + bust, { cache: "no-store" }).then(r => r.json()),
     ]);
     SESSIONS = (s.sessions || []).filter(x => x.start && x.title);
     (v.venues || []).forEach(x => VENUES[x.id] = x);
