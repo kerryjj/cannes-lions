@@ -81,6 +81,7 @@ const sessions = allEvents
       title: clean(e.title),
       host: "Sport Beach",
       venueId: "sportbeach", // all sub-areas live inside the Sport Beach venue
+      room: subVenue, // sub-area within Sport Beach (e.g. "Court", "The A Deck Bar")
       start: toParis(e.startTime),
       end: toParis(e.endTime || e.startTime),
       description: [subVenue ? `Area: ${subVenue}.` : "", ...descParts]

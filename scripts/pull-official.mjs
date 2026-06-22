@@ -91,6 +91,7 @@ const sessions = events
       title: clean(e.title),
       host: "Cannes Lions",
       venueId: mapVenue(loc),
+      room: clean(loc.venue || ""), // specific stage/room within the venue (e.g. "Lumière Theatre")
       start: toIso(e.dateIso, e.startTime),
       end: toIso(e.dateIso, e.endTime || e.startTime),
       description: descParts.join(" ").slice(0, 600),

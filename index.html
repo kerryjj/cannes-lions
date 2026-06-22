@@ -52,6 +52,7 @@
   .badge.ok { background: var(--good); color: #04210f; }
   a.maps { color: var(--accent2); text-decoration: none; }
   a.maps:hover { text-decoration: underline; }
+  .room { color: var(--text); font-weight: 500; }
   .agenda { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
   .agenda h2 { margin: 0 0 4px; font-size: 15px; }
   .agenda-row { display: flex; gap: 10px; align-items: baseline; padding: 7px 0; border-top: 1px solid var(--line); }
@@ -136,7 +137,9 @@ async function load() {
   hosts.forEach((h, i) => HOST_COLORS[h] = palette[i % palette.length]);
   hostFilter = new Set(hosts);
   const days = [...new Set(SESSIONS.map(s => dayKey(s.start)))].sort();
-  activeDay = days[0];
+  // Land on today if the festival is on, otherwise the first day.
+  const todayKey = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/Paris" });
+  activeDay = days.includes(todayKey) ? todayKey : days[0];
   renderDays(days); renderHosts(hosts); render();
   document.getElementById("footer").innerHTML = `${SESSIONS.length} sessions across ${hosts.length} hosts · times shown in Cannes local time (Europe/Paris) · your picks are saved in this browser`;
 }
@@ -205,7 +208,7 @@ function card(s) {
     <div class="meta">
       <span class="host-tag">${esc(s.host)}</span>
       <span>${fmtTime(s.start)}–${fmtTime(s.end)}</span>
-      <span>📍 ${mapsLink(v)}</span>
+      <span>📍 ${mapsLink(v)}${roomText(s, v)}</span>
       ${sourceLink(s)}
       ${clash || ""}
     </div>
@@ -232,6 +235,16 @@ function sourceLink(s) {
   return out.length ? `<span>${out.join(" · ")}</span>` : "";
 }
 
+// The specific stage/room within a venue (e.g. which Palais theatre) — shown only
+// when it adds info beyond the venue name itself.
+function roomText(s, v) {
+  if (!s.room) return "";
+  const r = s.room.toLowerCase().trim();
+  const vn = (v.name || "").toLowerCase();
+  if (!r || vn.includes(r)) return "";
+  return ` · <span class="room">${esc(s.room)}</span>`;
+}
+
 function mapsLink(v) {
   if (!v.lat) return esc(v.name);
   const q = encodeURIComponent(v.address || v.name);
@@ -255,7 +268,7 @@ function renderAgenda() {
       let clash = prev && overlaps(prev, s) ? `<span class="badge clash">overlaps previous</span>` : "";
       row.innerHTML = `<span class="t">${fmtTime(s.start)}–${fmtTime(s.end)}</span>
         <span><strong style="color:${HOST_COLORS[s.host]}">${esc(s.host)}</strong> — ${esc(s.title)}<br>
-        <span style="color:var(--muted);font-size:13px">📍 ${mapsLink(v)} ${sourceLink(s)} ${clash}</span></span>
+        <span style="color:var(--muted);font-size:13px">📍 ${mapsLink(v)}${roomText(s, v)} ${sourceLink(s)} ${clash}</span></span>
         <span class="spacer"></span>
         <button class="chip" data-id="${s.id}">✕</button>`;
       row.querySelector("button").onclick = () => toggleGoing(s.id);

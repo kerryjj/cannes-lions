@@ -113,6 +113,7 @@ function normalizeJsonObjects(arr, host) {
     title: s.title,
     host: s.host || host,
     venueId: venueIds.has(s.venueId) ? s.venueId : guessVenue(s.venue || s.location || s.venueId || ""),
+    room: s.room || "",
     start: s.start,
     end: s.end || s.start,
     description: s.description || "",
