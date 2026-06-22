@@ -60,6 +60,7 @@ Everything downstream reads only `data/sessions.json`. Each session:
 | **Microsoft Gardens** | `data/raw/microsoft.json` — hand-built from the pasted agenda in `data/sources/microsoft.txt` | ✅ 18 sessions |
 | **TikTok Garden** | `data/raw/tiktok.json` — hand-built from the pasted agenda in `data/sources/tiktok.txt` (hosted at the Carlton) | ✅ 19 sessions |
 | **Meta Beach** | `data/raw/metabeach.json` — hand-built from the pasted schedule in `data/sources/metabeach.txt` (Plage du Majestic) | ✅ 17 sessions |
+| **ADWEEK House** | `scripts/pull-adweek.mjs` — parses the public Swoogo agenda HTML at `event.adweek.com/awh-cannes-2026/agenda` (at Le Majestic) | ✅ 77 sessions, auto |
 
 > The official programme already lists many brand activations (Sport Beach, Meta
 > Beach, Microsoft Garden, Canva Cabana, LinkedIn Rooftop, Amazon Port, etc.), so a
