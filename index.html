@@ -27,6 +27,11 @@
   .days { display: flex; gap: 6px; flex-wrap: wrap; }
   button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel2); color: var(--text); padding: 6px 12px; border-radius: 999px; }
   select.filter { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel2); color: var(--text); padding: 6px 12px; border-radius: 999px; max-width: 230px; }
+  .search { width: 100%; box-sizing: border-box; margin: 0 0 12px; padding: 10px 14px; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 10px; font: inherit; }
+  .search:focus { outline: none; border-color: var(--accent2); }
+  .search::placeholder { color: var(--muted); }
+  .searchinfo { color: var(--muted); font-size: 13px; margin: -4px 0 12px; }
+  .search-day { font-size: 15px; margin: 20px 0 2px; color: var(--text); }
   select.filter.on { border-color: var(--accent2); color: var(--accent2); }
   button:hover { border-color: var(--muted); }
   button.active { background: var(--accent); color: #1a1300; border-color: var(--accent); font-weight: 600; }
@@ -94,6 +99,8 @@
   </div>
 </header>
 <main>
+  <input id="search" class="search" type="search" autocomplete="off" placeholder="🔍 Search sessions, speakers, topics… (whole week)" />
+  <div id="searchInfo" class="searchinfo hide"></div>
   <div class="hosts" id="hosts"></div>
   <div id="schedule"></div>
   <div id="agenda" class="hide"></div>
@@ -110,7 +117,7 @@
 const PARIS_OFFSET = "+02:00"; // CEST in June
 const STORE_KEY = "cannes2026.going";
 let SESSIONS = [], VENUES = {}, WALK = {}, HOST_COLORS = {};
-let activeDay = null, hostFilter = new Set(), showAgenda = false, venueFilter = "";
+let activeDay = null, hostFilter = new Set(), showAgenda = false, venueFilter = "", searchQuery = "";
 const VSEP = String.fromCharCode(31); // unit separator: venueFilter value = "venueId" or "venueId" + VSEP + "room"
 let going = new Set(JSON.parse(localStorage.getItem(STORE_KEY) || "[]"));
 
@@ -210,6 +217,14 @@ function matchVenue(s) {
   return s.venueId === venueFilter.slice(0, i) && (s.room || "") === venueFilter.slice(i + 1);
 }
 
+// Free-text search over title, description, host, stage and tags. Multiple words
+// are AND-matched (all must appear somewhere).
+function matchSearch(s, q) {
+  if (!q) return true;
+  const hay = `${s.title} ${s.description} ${s.host} ${s.room || ""} ${(s.tags || []).join(" ")}`.toLowerCase();
+  return q.split(/\s+/).every(w => hay.includes(w));
+}
+
 function syncView() {
   document.getElementById("schedule").classList.toggle("hide", showAgenda);
   document.getElementById("agenda").classList.toggle("hide", !showAgenda);
@@ -222,16 +237,33 @@ function render() {
   document.getElementById("goingCount").textContent = going.size ? `(${going.size})` : "";
   if (showAgenda) return renderAgenda();
   const el = document.getElementById("schedule"); el.innerHTML = "";
-  const todays = SESSIONS
-    .filter(s => dayKey(s.start) === activeDay && hostFilter.has(s.host) && matchVenue(s))
+  const q = searchQuery.trim().toLowerCase();
+  const searching = q.length > 0;
+  // When searching, look across the whole week; otherwise just the active day.
+  let list = SESSIONS
+    .filter(s => hostFilter.has(s.host) && matchVenue(s) && matchSearch(s, q) && (searching || dayKey(s.start) === activeDay))
     .sort((a, b) => a.start < b.start ? -1 : a.start > b.start ? 1 : 0);
-  if (!todays.length) {
-    const hint = venueFilter ? "Nothing at that venue/stage on this day — try another day, or reset the venue filter." : "No sessions match. Toggle hosts back on above.";
+
+  const info = document.getElementById("searchInfo");
+  info.classList.toggle("hide", !searching);
+  if (searching) info.textContent = `${list.length} result${list.length === 1 ? "" : "s"} for “${searchQuery.trim()}” across the week`;
+
+  if (!list.length) {
+    const hint = searching ? "No sessions match your search."
+      : venueFilter ? "Nothing at that venue/stage on this day — try another day, or reset the venue filter."
+      : "No sessions match. Toggle hosts back on above.";
     el.innerHTML = `<div class="empty">${hint}</div>`; return;
   }
-  // group by start time
-  let lastSlot = null, slotEl;
-  todays.forEach(s => {
+  // group by day (only when searching across days) then by start time
+  let lastDay = null, lastSlot = null, slotEl;
+  list.forEach(s => {
+    if (searching) {
+      const dk = dayKey(s.start);
+      if (dk !== lastDay) {
+        const dh = document.createElement("h2"); dh.className = "search-day"; dh.textContent = dayLabel(dk);
+        el.appendChild(dh); lastDay = dk; lastSlot = null;
+      }
+    }
     const slot = fmtTime(s.start);
     if (slot !== lastSlot) {
       const h = document.createElement("div"); h.className = "slot-time"; h.textContent = slot;
@@ -396,6 +428,11 @@ function exportIcs() {
 
 document.getElementById("exportBtn").onclick = exportIcs;
 document.getElementById("viewToggle").onclick = () => { showAgenda = !showAgenda; syncView(); render(); };
+document.getElementById("search").oninput = (e) => {
+  searchQuery = e.target.value;
+  if (searchQuery.trim() && showAgenda) { showAgenda = false; syncView(); }
+  render();
+};
 load();
 </script>
 </body>
